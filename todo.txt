@@ -1,0 +1,2 @@
+- Plan out guide.md
+- Pull out information from Guide and Players into Scratchpad
