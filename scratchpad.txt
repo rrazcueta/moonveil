@@ -1,0 +1,7 @@
+- Plan out the guide section
+- Clean up
+
+Look into:
+Jekyll
+docusaurus
+Gitlab/Github CI setup
