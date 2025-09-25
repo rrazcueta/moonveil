@@ -3,7 +3,7 @@
 Exploring the Moonveil means hauling gear — and sometimes hauling friends. Track everything you carry in **Equipment & Backpack**.
 
 - **Slots**: Most items take up 1 slot. Larger items take up 2 or more slots.
-- **Extra**: Small things like letters, keys, or coins are free to carry
+- **Extra**: Small things like letters, keys, or coins are free to carry.
 
 ## Capacity
 
@@ -11,7 +11,7 @@ Your carrying capacity is **6 plus Willpower**. When carrying more you are **Enc
 
 ## Dungeon Gear
 
-**Dungeon Gear** is a special item that always takes 1 slot. When you need it, you can pull it from your pack as any common adventuring tool you could reasonably buy.
+**Dungeon Gear** is a special item that takes 1 slot. When you need it, it becomes any reasonable adventuring tool. For some items the Guide rolls a number of d6 to determine how much is available. For example, if you pull out a rope you have d6 x 10 feet of rope; if you pull rations you have enough food and drink for d6 Seekers.
 
 ## Carrying Allies
 

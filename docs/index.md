@@ -17,13 +17,14 @@
 
 ## Quick Start
 
-- [Character Creation](rules/character-creation.md)
-- [How Combat Works](rules/combat.md)
-- [Moonveil Setting](setting/regions.md)
+- [Character Creation](./players/)
+- [How Combat Works](./rules/combat)
+- [Moonveil Setting](./setting/regions)
+- [Test](./test)
 
 ---
 
 ## Status
 
 Moonveil is in active development. This site is updated regularly with playtest drafts.  
-To follow progress, see the [Design Notes](../design-notes/).
+To follow progress, see the [Design Notes](../design-notes)

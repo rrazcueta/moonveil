@@ -1,6 +1,6 @@
 # Magic
 
-Magic comes in two forms: Spells and Miracles. Spells are shaped by knowledge of the Arcane. Miracles are drawn forth by sheer Willpower.
+Magic comes in two forms: Spells and Miracles. Spells are shaped by Insight into the unknown. Miracles are drawn forth by sheer Willpower.
 
 ## Casting Magic
 
@@ -8,9 +8,9 @@ When you cast a Spell or Miracle, roll 2d6 against its DC:
 
 - Success: Roll ≥ DC – the effect takes place.
 - Failure: Roll &lt; DC – the effect fizzles, and you lose it until you Rest.
-- Terrible Failure: ≤ The Verge – roll against Arcane Mishaps or Penance
+- Terrible Failure: ≤ The Verge – roll against Insight Mishaps or Penance
 
-## Arcane Mishaps
+## Insight Mishaps
 
 3 or better nothing happens
 

@@ -9,7 +9,7 @@ Most of the time rolling at or over the **Dice Check** (**DC**) is a success and
 
 ## Stat Pips
 
-Each stat – **Strength**, **Dexterity**, **Arcane**, and **Willpower** – measures a Seeker’s endurance in that domain. When marking pips, you can only mark a number of pips up to that stat’s value.
+Each stat – **Strength**, **Dexterity**, **Insight**, and **Willpower** – measures a Seeker’s endurance in that domain. When marking pips, you can only mark a number of pips up to that stat’s value.
 
 ## Advantage and Disadvantage
 

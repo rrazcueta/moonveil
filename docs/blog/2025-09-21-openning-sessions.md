@@ -1,5 +1,5 @@
 ---
-title: "Session 1 & 2"
+title: 'Session 1 & 2'
 date: 2025-09-21
 tags: [keep, combat]
 ---
