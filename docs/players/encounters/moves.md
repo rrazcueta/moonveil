@@ -11,4 +11,12 @@ If an enemy blocks your path, roll a DC10 Dexterity check to Pass:
 - Failure: the blocking enemy gets a free attack.
 - Or if the space is large enough, you may spend a Move to freely pass the enemy
 
-Allies and other environmental factors may hinder your movement as well. When traversing through difficult environments roll a **Slip Check**.
+Allies and other environmental factors may hinder your movement as well. When traversing through difficult environments roll a **Slip Check**, reo d6 against your Pocket and take the smaller.
+
+## Second Move
+
+Spend your action and gain a second Move.
+
+## Footing
+
+Spend your Move and reset your Pocket. Roll d6 and take the new result.

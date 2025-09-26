@@ -21,3 +21,7 @@ In a particularly strong or weak position, you roll one extra die.
 # Slip Check
 
 Some effects do not cause real danger - but they do represent a loss. On a **Slip Check** roll d6 against Pocket then set the Pocket to the lower value. Mark Dexterity to reroll.
+
+# Exploding Roll
+
+These are dice rolls looking for a big number. Roll d6 and if the outcome is a 6 or more roll another. Add all the dice and hopefully (or not) you have your big number.

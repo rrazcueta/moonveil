@@ -17,10 +17,8 @@
 
 ## Quick Start
 
-- [Character Creation](./players/)
-- [How Combat Works](./rules/combat)
-- [Moonveil Setting](./setting/regions)
-- [Test](./test)
+- [Character Creation](./players/character-creation)
+- [Guide Tips](./guides/guide)
 
 ---
 

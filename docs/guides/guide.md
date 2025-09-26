@@ -2,6 +2,10 @@
 
 If you’re a Seeker, turn back! This section is just for you Guides.
 
+## Moon Effects
+
+Each day, The Moonveil curses your Seekers with a new Moon Effect. After a rest, roll d66 for an effect. Moon effects stack until you find safety from The Moonveil.
+
 # Rogue Mode
 
 Rogue Mode is about going deep into dungeons, finding loot, powering up, and accomplishing a goal.

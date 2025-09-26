@@ -2,21 +2,41 @@
 
 ## Big Cat
 
-Hit Points: 8
-Evade: 5, Limit 10
-Note: Seekers have to roll 5 or 6 to go first
+Hit Points: 3+d6
+Evade: 6, Limit 10
+Note: Seekers have to roll 5 or 6 to go before the cat
 
 ## Rat
 
-Hit Points: 2
-Evade: 6, Limit 10
-Note: Only attacks in large groups. If a rat sees another rate die, d6 rats run away
+Hit Points: d6/3
+Evade: 6, Limit 8
+Damage maxes at 2
+Note: When one rat dies, d6 rats run away
 
 ## Wolf
 
-Hit Points: 6
-Evade 6, Limit 10
+Hit Points: d6
+Evade: 6, Limit: 10
 Note: Attack 3d6 when surrounding an enemy (more Wolves than enemies)
+
+## Giant Wolf
+
+Hit Points: d6+6
+Evade: 6, Limit: 10
+Note: Any nearby wolf attacks with 3d6
+
+## Bat
+
+Hit Points: d6/3
+Evade: 6, Limit: 8
+It can recover its Move if it swaps its Pocket down during an attack
+Damage maxes at 2
+
+## Snake
+
+Hit Points: d6/3
+Evade: 6, Limit: 8
+It can recover its Move if it swaps its Pocket down during an attack
 
 ## Bear
 

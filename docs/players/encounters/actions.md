@@ -1,8 +1,8 @@
 # Actions
 
-When you take your action, you can choose from these or do something else you can reasonably attempt
+When you take an action, choose from one of these or anything else you could reasonably attempt in a handful of seconds.
 
-## 1. Attack
+## Attack
 
 Make an attack to damage an enemy. First confirm the target:
 
@@ -20,7 +20,7 @@ Then roll 2d6 and compare both dice against the target’s **Evade**, **Defense*
 
 Weapons and abilities can add extra effects when you score a hit. These can trigger at any tier, but most often on Critical Hits.
 
-## 2. Stagger Attack
+## Stagger Attack
 
 Make a melee attack to throw the enemy off-balance. Confirm the target and then roll 2d6 against the enemy's Defense and Limit.
 
@@ -36,25 +36,16 @@ Choose from the follow effects:
 - Recover your Move OR force the enemy to Move 1
 - Deal damage as if you scored a Weak Hit
 
-## 3. Double Move
+## Deduction
 
-Spend an Action to gain a Move.
+Spend an Action, mark 1 Insight, and work with the Guide to reveal insight into the challenge at hand.
 
-## 4. Footing
-
-Spend a Move, reroll your Pocket, and keep the new result.
-
-## 5. Deduction
-
-Spend an Action, mark 1 Insight, and work with the Guide to gain insight.
-
-- Usable in an encounter spend an Action or exploration
-- Identify an Advantage over a challenge or enemy
-- Or remove a Disadvantage affecting your group.
+- Identify an Advantage over a challenge or enemy or remove a Disadvantage affecting the team.
+- Reveal a new possibility like an enemy behavior that could be helpful.
 
 Refund if the result is not useful.
 
-## 6. Rally
+## Rally
 
 Spend an Action and mark 1 Willpower to
 
