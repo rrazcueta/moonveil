@@ -2,55 +2,63 @@
 
 ## Big Cat
 
-Hit Points: 3+d6
-Evade: 6, Limit 10
-Note: Seekers have to roll 5 or 6 to go before the cat
+Fast and evasive.
 
-## Rat
+Hit Points: 3 +d6
+Evade: 6
+Limit 10
+Seekers have to roll 5 or better to go before the cat.
 
-Hit Points: d6/3
-Evade: 6, Limit 8
-Damage maxes at 2
-Note: When one rat dies, d6 rats run away
+## Big Rat
+
+Hit Points: 1, 2, or 3
+Evade: 5
+Limit 8
+Damage Max 3
+When one rat dies, 1 or 2 rats run away
 
 ## Wolf
 
 Hit Points: d6
-Evade: 6, Limit: 10
-Note: Attack 3d6 when surrounding an enemy (more Wolves than enemies)
+Evade: 5
+Limit: 10
+Attacks at Advantage when there is a Pack Leader nearby
 
-## Giant Wolf
+## Wolf Pack Leader
 
-Hit Points: d6+6
-Evade: 6, Limit: 10
-Note: Any nearby wolf attacks with 3d6
+Hit Points: 3 +d6
+Evade: 5
+Limit: 10
+Attacks at Advantage
+Can Howl instead of moving. Wolves within earshot Pocket Roll.
 
-## Bat
+## Big Bat
 
-Hit Points: d6/3
-Evade: 6, Limit: 8
-It can recover its Move if it swaps its Pocket down during an attack
-Damage maxes at 2
+Hit Points: 1 or 2
+Evade: 6
+Limit: 8
+Damage max 3
+Recovers its Move if it Pockets during an attack
 
 ## Snake
 
-Hit Points: d6/3
-Evade: 6, Limit: 8
-It can recover its Move if it swaps its Pocket down during an attack
+Hit Points: 1, 2, or 3
+Evade: 6
+Limit: 8
+Reduce its Damage to 1 if the Seeker marks a pip
 
 ## Bear
 
-Hit Points: 20
-Evade 4, Limit 11
-Note: 3d6 to attack
+Hit Points: 12 +d6
+Evade: 4
+Limit: 11
+Attacks Twice
 
 ## Fire Pig
 
 Hit Points: 24
-Evade 3, Limit 10
-Attacks:
-Tusk: 3d6, on hit attack again
-Breath: Spend one turn charging up, Anyone Near DC7 Dex or 2d6 damage
-Charge Through: Spend Move and Action to Move => Attack Group => Move
-Armor: Damage reduction 2
-Note: Runs when under 10 HP
+Evade 3, Limit 11
+Damage Reduction 1
+Tusk, attack with advantage, on Strong Hit attack again
+Prepare Breath, their next action is Fire Breath
+Fire Breath, anyone near DC7 Dex or 2d6 damage

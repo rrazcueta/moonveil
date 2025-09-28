@@ -1,3 +1,4 @@
+- Moon Effects
 - Plan out the guide section
 - Clean up
 
@@ -5,3 +6,9 @@ Look into:
 Jekyll
 docusaurus
 Gitlab/Github CI setup
+  
+pandoc docs/index.md docs/players/*.md docs/players/encounters/*.md \
+  -o "Moonveil v1.1.pdf" \
+  --pdf-engine=xelatex \
+  --toc \
+  --toc-depth=1

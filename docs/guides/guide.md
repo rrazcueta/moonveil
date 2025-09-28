@@ -1,3 +1,19 @@
+NOTE!! make sure to differentiate one shot death stuff vs campaign death stuff
+
+## Weapons and Equipment
+
+| Weapon  | Coin | Description                                                |
+| ------- | ---- | ---------------------------------------------------------- |
+| Blade   | 2    | Ordinary, good for martial fighting. Minimum 3 damage      |
+| Sword   | 4    | An elegant weapon. Minimum 3 damage. Strong Hit +1 damage  |
+| Javelin | 1    | Can stab, can throw. Range 1. Strong Hit +1 damage         |
+| Spear   | 1    | Big game hunting. Strong Hit +2 damage                     |
+| Pike    | 5    | Bigger game hunting. Strong Hit +3 damage                  |
+| Bow     | 1    | Get them before they get you. Range 2                      |
+| Axe     | 1    | Versatile. Minimum 2 damage. Strong Hit +1 damage          |
+| Hammer  | 1    | Heavy. Critical Hit +d6\* damage                           |
+| Halberd | 6    | 2 Handed. Strong Hit +1 damage. Critical Hit +d6\* damage. |
+
 # How To Run A Game
 
 If you’re a Seeker, turn back! This section is just for you Guides.
