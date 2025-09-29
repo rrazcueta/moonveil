@@ -1,4 +1,4 @@
-# Rolling the Pocket Push
+# Rolling and the Pocket Push
 
 Moonveil runs on the Pocket Push. Your **Pocket** lets you swap luck between rolls, while your **Ability Points** can be spent to press harder when the dice don’t fall your way. Every choice carries forward—each roll shifts your odds for the next.
 

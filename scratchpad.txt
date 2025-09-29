@@ -7,6 +7,8 @@ Jekyll
 docusaurus
 Gitlab/Github CI setup
   
+dungeon scrawl
+
 pandoc docs/index.md docs/players/*.md docs/players/encounters/*.md \
   -o "Moonveil v1.1.pdf" \
   --pdf-engine=xelatex \

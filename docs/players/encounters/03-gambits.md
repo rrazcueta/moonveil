@@ -35,5 +35,5 @@ Before a ranged attack if you have at least 1 pip of Dexterity.
 
 After being hit if you have at least 1 pip of Dexterity.
 
-- Roll DC10 Dexterity. On success, negate all damage.
+- Roll DC10 Dexterity. On success, negate all damage and effects.
 - On failure, take full damage, and mark all your Dexterity.

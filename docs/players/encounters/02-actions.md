@@ -4,7 +4,7 @@
 
 When you take an action, choose from one of the following or anything else you could reasonably attempt in a moment.
 
-### Attack
+### 1. Attack
 
 Make an attack to damage an enemy. First confirm the target:
 
@@ -22,7 +22,7 @@ Then roll 2d6 and compare both dice against the target’s **Evade**, **Defense*
 
 Weapons and abilities may add extra effects when you score a hit. These can trigger on any tier, but most often on Critical Hits.
 
-### Combat Maneuver
+### 2. Stunt Attack
 
 Make a melee attack against a nearby enemy of your choice. Roll 2d6 against the enemy's **Defense** and **Limit**.
 
@@ -38,7 +38,7 @@ Choose from the follow effects:
 - Recover your Move OR force the enemy to Move 1
 - Deal damage equal to your Smaller Die Value
 
-### Deduction
+### 3. Deduction
 
 Spend an Action, mark 1 Insight, and work with the Guide to reveal insight into the challenge at hand.
 
@@ -47,7 +47,7 @@ Spend an Action, mark 1 Insight, and work with the Guide to reveal insight into 
 
 Refund if the result is not useful.
 
-### Rally
+### 4. Rally
 
 Spend an Action and mark 1 Willpower to
 

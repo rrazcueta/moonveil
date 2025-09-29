@@ -1,3 +1,5 @@
+NOTE!! Before adding new rules, check to see if existing rules already solve it
+
 NOTE!! make sure to differentiate one shot death stuff vs campaign death stuff
 
 ## Weapons and Equipment
