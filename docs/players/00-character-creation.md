@@ -15,7 +15,7 @@ Write the numbers [2, 2, 1, 1] on your four **Ability Points** or roll d6.
 | 5   |    1     |     2     |    1    |     2     |
 | 6   |    1     |     1     |    2    |     2     |
 
-Then determine your **Hit Points**. Set HP to 1d6 + 3xStrength.
+Then determine your **Hit Points**. Set HP to 1d6 + (3 x Strength).
 
 \clearpage
 

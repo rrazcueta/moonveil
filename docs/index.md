@@ -27,5 +27,9 @@ header-includes:
 
 Something about the core design.
 
-- Basic OSR structure
+- Inspired by
+  - OSR
+  - MtG
+  - Dungeon Meshi
+- Combat Focused
 - Pocket Push Rolls

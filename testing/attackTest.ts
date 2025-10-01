@@ -1,156 +1,189 @@
-console.log('quoka');
+console.log("quoka");
 
 function roll(): number {
   return Math.ceil(Math.random() * 6);
 }
 
 function explodingRoll(t = 6): number {
-    const r = roll();
-    return r < t ? r : r + explodingRoll(t);
+  const r = roll();
+  return r < t ? r : r + explodingRoll(t);
 }
 
 interface weapon {
-    min?: number;
-    strong?: (a: number, b: number) => number;
-    critical?: () => number;
+  name?: string;
+  min?: number;
+  strong?: (a: number, b: number) => number;
+  critical?: () => number;
 }
 
-function rollAttack(
-    {
-        weapon = {},
-        a = roll(),
-        b = roll(),
-        pocket = roll(),
-        enemy = {
-            evade: 5,
-            limit: 10,
-            pocket: roll()
-        }
-    }: {
-        weapon: weapon,
-        a?: number,
-        b?: number,
-        pocket?: number,
-        enemy?: {
-            evade: number,
-            limit: number,
-            pocket: number
-        }
-    }
-){
-    const o: number[] = [a, b, pocket].sort((x, y) => y - x);
+interface attackInput {
+  weapon: weapon;
+  a?: number;
+  b?: number;
+  pocket?: number;
+  enemy?: {
+    evade: number;
+    limit: number;
+    pocket?: number;
+  };
+  defend?: boolean;
+}
 
-    function attackOutcome (a : number, b : number, pocket : number){
-        const sum = a+b;
-        const targetDefense = enemy.pocket + enemy.evade;
-        let damageTier = 0;
+function rollAttack({
+  weapon = {},
+  a = roll(),
+  b = roll(),
+  pocket = roll(),
+  enemy = {
+    evade: 5,
+    limit: 10,
+    pocket: roll(),
+  },
+  defend = false,
+}: attackInput) {
+  const o: number[] = [a, b, pocket].sort((x, y) => y - x);
 
-        
-        if(sum <= enemy.evade) {
-            damageTier = 0;
-        } else if (sum < targetDefense){
-            damageTier = 1;
-        } else if (sum < enemy.limit || !weapon.critical){
-            damageTier = 2;
-        } else {
-            damageTier = 3;
-        }
+  function attackOutcome(first: number, second: number, pocket: number) {
+    const sum = first + second;
+    const ePocket = enemy.pocket ?? 0;
+    const targetDefense = Math.min(ePocket + enemy.evade, enemy.limit);
+    let damageTier = 0;
 
-        
-        const weakDamage = weapon.min?? 1;
-        const strongDamage = weapon.strong ? weapon.strong(a, b) : Math.max(a, b)
-        const criticalDamage = damageTier == 3 && weapon.critical? weapon.critical() : 0;
-
-        let damage = 0;
-        if(damageTier == 1) {
-            damage = weakDamage;
-        } else if (damageTier == 2) {
-            damage = Math.max(weakDamage, strongDamage);
-        } else if (damageTier == 3) {
-            damage = strongDamage + criticalDamage;
-        }
-
-        return {
-            damage,
-            damageTier,
-            used: [a, b],
-            pocket,
-        }
+    if (sum <= enemy.evade) {
+      damageTier = 0;
+    } else if (sum < targetDefense) {
+      damageTier = 1;
+    } else if (sum < enemy.limit || !weapon.critical) {
+      damageTier = 2;
+    } else {
+      damageTier = 3;
     }
 
-    const attackPossibilities = [
-        attackOutcome(o[0], o[1], o[2]),
-        attackOutcome(o[0], o[2], o[1]),
-        attackOutcome(o[1], o[2], o[0])
-    ]
+    const weakDamage = weapon.min ?? 1;
+    const strongDamage = weapon.strong
+      ? weapon.strong(first, second)
+      : Math.max(first, second);
+    const criticalDamage =
+      damageTier == 3 && weapon.critical ? weapon.critical() : 0;
 
-    function pickBest<T>(fromItems: T[], firstBy: (a: T) => number, thenBy: (a: T) => number): T {
-    return fromItems.reduce((best, nextItem) => {
-        if (firstBy(nextItem) > firstBy(best)) return nextItem;
-        if (firstBy(nextItem) === firstBy(best) && thenBy(nextItem) > thenBy(best)) return nextItem;
-        return best;
-    });
+    let damage = 0;
+    if (damageTier == 1) {
+      damage = weakDamage;
+    } else if (damageTier == 2) {
+      damage = Math.max(weakDamage, strongDamage);
+    } else if (damageTier == 3) {
+      damage = strongDamage + criticalDamage;
     }
-
-    const bestAttack = pickBest(attackPossibilities, x => x.damageTier, x => x.pocket)
-    const bestPocket = pickBest(attackPossibilities, x => x.pocket, x => x.damageTier)
 
     return {
-        bestAttack,
-        bestPocket
+      damage,
+      damageTier,
+      used: [first, second],
+      pocket,
+    };
+  }
+
+  const attackPossibilities = [
+    attackOutcome(o[0], o[1], o[2]),
+    attackOutcome(o[0], o[2], o[1]),
+    attackOutcome(o[1], o[2], o[0]),
+  ];
+
+  function pickBest<T>(
+    fromItems: T[],
+    firstBy: (a: T) => number,
+    thenBy: (a: T) => number
+  ): T {
+    return fromItems.reduce((best, nextItem) => {
+      if (firstBy(nextItem) > firstBy(best)) return nextItem;
+      if (
+        firstBy(nextItem) === firstBy(best) &&
+        thenBy(nextItem) > thenBy(best)
+      )
+        return nextItem;
+      return best;
+    });
+  }
+
+  const bestAttack = pickBest(
+    attackPossibilities,
+    (x) => x.damageTier,
+    (x) => x.pocket
+  );
+  const bestPocket = pickBest(
+    attackPossibilities,
+    (x) => x.pocket,
+    (x) => x.damageTier
+  );
+
+  return defend ? bestPocket : bestAttack;
+}
+
+function getAverage(attackInput: attackInput, reps = 3, attempts = 10000) {
+  let totalDamage = 0;
+  let totalDamageTier = 0;
+  let totalPocket = 0;
+
+  let pocket = roll();
+  let current = 0;
+  if (pocket < 4) {
+    pocket = roll();
+  }
+
+  for (let i = 0; i < attempts; i++) {
+    const r = rollAttack(attackInput);
+    totalDamage += r.damage;
+    totalDamageTier += r.damageTier;
+    totalPocket += r.pocket;
+
+    pocket = r.pocket;
+
+    current++;
+    if (current > reps) {
+      current = 0;
+      pocket = roll();
+      if (pocket < 4) {
+        pocket = roll();
+      }
     }
+  }
+
+  return {
+    weapon: attackInput.weapon.name ?? "unnamed",
+    damage: totalDamage / attempts,
+    damageTier: totalDamageTier / attempts,
+    pocket: totalPocket / attempts,
+  };
 }
 
-const basic : weapon = {};
-const sword : weapon = { min: 3};
-const spear: weapon = {strong: (a, b) => Math.max(a, b) + 2};
-const axe: weapon = {min: 1, strong: (a, b) => Math.max(a, b) + 1};
-const hammer: weapon = {critical: () => explodingRoll()};
+const basic: weapon = { name: "basic" };
+const sword: weapon = { name: "sword", min: 3 };
+const spear: weapon = { name: "spear", strong: (a, b) => Math.max(a, b) + 2 };
+const knife: weapon = {
+  name: "knife",
+  strong: (a, b) => Math.min(a, b) + roll(),
+};
+const axe: weapon = {
+  name: "axe",
+  min: 1,
+  strong: (a, b) => Math.max(a, b) + 1,
+};
+const hammer: weapon = { name: "hammer", critical: () => roll() };
 
-console.log(rollAttack({weapon: sword}).bestAttack);
+const reps = 5;
+const enemy = { evade: 5, limit: 10 };
+console.log(getAverage({ weapon: basic, enemy }, reps));
+console.log(getAverage({ weapon: sword, enemy }, reps));
+console.log(getAverage({ weapon: spear, enemy }, reps));
 
-const attempts = 100000;
+console.log(getAverage({ weapon: knife, enemy }, reps));
+console.log(getAverage({ weapon: axe, enemy }, reps));
+console.log(getAverage({ weapon: hammer, enemy }, reps));
 
-let damage : number[] = []
-let totalDamage : number = 0;
-let pocket: number[] = []
-let totalPocket : number = 0;
+console.log(getAverage({ weapon: basic, enemy, defend: true }, reps));
+console.log(getAverage({ weapon: sword, enemy, defend: true }, reps));
+console.log(getAverage({ weapon: spear, enemy, defend: true }, reps));
 
-let pDamage : number[] = []
-let pTotalDamage : number = 0;
-let pPocket : number[] = []
-let pTotalPocket : number = 0;
-
-for(let i = 0; i < attempts; i++) {
-    const result = rollAttack({weapon: hammer});
-
-    const dmg = result.bestAttack.damage;
-    const pkt = result.bestAttack.pocket;
-    damage[dmg] = (damage[dmg] ?? 0) + 1;
-    totalDamage += dmg;
-    pocket[pkt] = (pocket[pkt] ?? 0) + 1;
-    totalPocket += pkt;
-
-    const pDmg = result.bestPocket.damage;
-    const pPkt = result.bestPocket.pocket;
-    pDamage[pDmg] = (pDamage[pDmg] ?? 0) + 1;
-    pTotalDamage += pDmg;
-    pPocket[pPkt] = (pocket[pPkt] ?? 0) + 1;
-    pTotalPocket += pPkt;
-}
-
-console.log([...damage].map((x, i) => ((x??0)/attempts*100).toFixed(2) + '%').join(', '));
-console.log('Average best damage: ' + (totalDamage/attempts).toFixed(2));
-console.log([...pocket].map((x, i) => (( (x??0)/attempts*100).toFixed(2)) + '%').join(', '));
-console.log('Average damage pocket: ' + (totalPocket/attempts).toFixed(2));
-
-console.log([...pDamage].map((x, i) => (( (x??0)/attempts*100).toFixed(2)) + '%').join(', '));
-console.log('Average defense damage: ' + (pTotalDamage/attempts).toFixed(2));
-console.log([...pPocket].map((x, i) => (( (x??0)/attempts*100).toFixed(2)) + '%').join(', '));
-console.log('Average defense pocket: ' + (pTotalPocket/attempts).toFixed(2));
-
-console.log('Average damage: ' + ((totalDamage + pTotalDamage)/attempts).toFixed(2));
-console.log('Average pocket: ' + ((totalPocket + pTotalPocket)/attempts).toFixed(2));
-console.log('Average Value: ' + ((totalDamage + pTotalDamage + totalPocket + pTotalPocket)/attempts).toFixed(2));
-
-console.log(pDamage.map((x, i) => (!x ? 'banana' : 'apple')).join(', '));
+console.log(getAverage({ weapon: knife, enemy, defend: true }, reps));
+console.log(getAverage({ weapon: axe, enemy, defend: true }, reps));
+console.log(getAverage({ weapon: hammer, enemy, defend: true }, reps));

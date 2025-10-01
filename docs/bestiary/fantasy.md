@@ -9,11 +9,19 @@ Limit: 9
 
 ## Goblin
 
-Annoying. Comes in Pairs.
+Clubs and kitchen knives. Annoying. Comes in pairs.
 
 Hit Points: d6
 Evade: 6
 Limit: 10
+Attempts Stunt Attacks often.
+
+## Tall Goblin
+
+Hit Points: 9 +d6
+Evade: 5
+Limit: 10
+Throwing Spear - Strong Attack +1 damage, Range 1
 
 ## Slime
 

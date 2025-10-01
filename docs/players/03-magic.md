@@ -9,6 +9,10 @@ When you cast a Spell or Miracle, roll 2d6 against its DC:
 - Success: Roll ≥ DC – the effect takes place.
 - Failure: Roll < DC – the effect fizzles, and you lose it until you Rest.
 
+## Arcane Failure
+
+If your Spell roll fails under The Verge, lose 1 Max HP. Each day The Verge starts at 5 and increases by 1 for each failed Spell.
+
 ## Penance
 
 Instead of spending Willpower to reroll a Miracle, you may take on Guilt.

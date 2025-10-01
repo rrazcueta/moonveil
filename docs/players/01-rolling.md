@@ -29,7 +29,7 @@ In a strong or weak position, roll an extra die.
 
 ## Pocket Rolls
 
-Some effects force a change to Pocket.
+Some effects force a change to Pocket. Seekers can mark Dexterity to reroll these rolls.
 
 - **Pocket Roll**: set your Pocket to d6.
 - **Pocket Up**: roll d6 and compare to your Pocket. Take the bigger value.

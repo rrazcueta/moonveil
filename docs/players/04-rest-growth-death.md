@@ -5,12 +5,12 @@
 In a safe space outside of an encounter, eat a meal and spend 8 hours recovering to recover.
 
 - Erase all marked pips, recover lost Spells and Miracles
-- Roll a number of d6 equal to your Level, add 3xStrength, and set your Max HP to this total if you choose.
+- Roll a number of d6 equal to your Level, add (3 x Strength), and set your Max HP to this total if you choose.
 - Heal all HP
 
 ## Growth
 
-When you reach a milestone, Level Up, gain +1 in an Ability Point, and increase HP accordingly.
+When you reach a milestone, increase Level +1, gain +1 in an Ability Point, and increase HP accordingly.
 
 ## Death
 
