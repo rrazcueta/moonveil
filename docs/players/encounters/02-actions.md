@@ -2,7 +2,7 @@
 
 ## Actions
 
-When you take an action, choose from one of the following or anything else you could reasonably attempt in a moment.
+When you take an Action, choose from one of the following or anything else you could reasonably attempt in a moment.
 
 ### 1. Attack
 
@@ -13,18 +13,16 @@ Make an attack to damage an enemy. First confirm the target:
 
 Then roll 2d6 and compare both dice against the target’s **Evade**, **Defense**, and **Limit** to determine if and how hard the attack hits.
 
-| Thresholds | Tier             | Damage               |
-| ---------- | ---------------- | -------------------- |
-| ≤ Evade    | **Miss**         | 0                    |
-| < Defense  | **Weak Hit**     | 1                    |
-| ≥ Defense  | **Strong Hit**   | Bigger Die Value     |
-| ≥ Limit    | **Critical Hit** | Bigger Die Value + 1 |
-
-Weapons and abilities may add extra effects when you score a hit. These can trigger on any tier, but most often on Critical Hits.
+| Thresholds | Tier             | Damage            |
+| ---------- | ---------------- | ----------------- |
+| ≤ Evade    | **Miss**         | 0                 |
+| < Defense  | **Weak Hit**     | 1                 |
+| ≥ Defense  | **Strong Hit**   | Smaller Die Value |
+| ≥ Limit    | **Critical Hit** | Bigger Die Value  |
 
 ### 2. Deduction
 
-Mark 1 Insight, and work with the Guide to reveal insight into the challenge at hand.
+Mark 1 Insight, and work with the Guide to reveal useful information into the challenge at hand.
 
 - Identify an Advantage over a challenge or enemy or remove a Disadvantage affecting the team.
 - Reveal a new possibility like an enemy behavior that could be helpful.

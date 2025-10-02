@@ -15,6 +15,6 @@ If you think you might need something, ask the Guide if they would allow it as D
 
 Carrying a Seeker, without their gear, takes 5 slots. You need to accomodate slots for your own gear and any gear of theirs as well.
 
-## Capacity
+## Encumberance
 
-Your carrying capacity is **6 plus Willpower**. When carrying more you are **Encumbered** and roll everything at Disadvantage. You cannot carry more than 12 total slots.
+You can carry 6 + Willpower items without penalty. For each item beyond that, you gain **Encumbrance**. Subtract your Encumbrance from every roll before resolving it.

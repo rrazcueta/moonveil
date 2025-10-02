@@ -38,7 +38,7 @@ Fast and evasive.
 - Evade: 5
 - Limit: 10
 - Attacks at Advantage
-- Howls, costs Move, nearby Wolves Pocket Roll.
+- Howls, costs Move, nearby Wolves roll Pocket.
 
 ## Big Bat
 
@@ -54,14 +54,14 @@ Fast and evasive.
 - Evade: 6
 - Limit: 10
 - Maximum Damage 3
-- On Hit mark a pip or take d6\* damage
+- On Hit mark a pip or take d6 damage
 
 ## Bear
 
 - Hit Points: 18 +d6
 - Evade: 4
 - Limit: 11
-- Attacks Twice, Critical Hit +d6\*
+- Attacks Twice, Critical Hit +d6
 
 ## Fire Pig
 

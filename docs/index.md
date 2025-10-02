@@ -11,17 +11,15 @@ header-includes:
   - \newcommand{\sectionbreak}{\clearpage}
 ---
 
----
+\clearpage
+
+> Cool text about the Moonveil. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et ligula hendrerit, maximus erat at, vestibulum nisi. Ut aliquet, nulla at scelerisque venenatis, mi est vehicula ipsum, eu vulputate nunc felis ac arcu. Mauris convallis vitae elit nec efficitur. Donec non tempor urna. Sed sit amet elit id eros elementum fringilla congue eu odio. In posuere, dolor a venenatis consectetur, lorem metus tempus diam, eget maximus quam lectus nec velit. Nunc sit amet erat mi. Donec id bibendum ante.
 
 ## What You Need
 
 - 2–6 players
 - A ton of six-sided dice (d6s)
 - Pencil, paper, and character sheets
-
-\clearpage
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et ligula hendrerit, maximus erat at, vestibulum nisi. Ut aliquet, nulla at scelerisque venenatis, mi est vehicula ipsum, eu vulputate nunc felis ac arcu. Mauris convallis vitae elit nec efficitur. Donec non tempor urna. Sed sit amet elit id eros elementum fringilla congue eu odio. In posuere, dolor a venenatis consectetur, lorem metus tempus diam, eget maximus quam lectus nec velit. Nunc sit amet erat mi. Donec id bibendum ante.
 
 ## Who is this for?
 

@@ -4,7 +4,7 @@
 
 Wager your Ability Points to perform Gambits.
 
-### Damage
+### 1. Damage
 
 Before a melee attack if you have at least 1 pip of Strength.
 
@@ -13,7 +13,7 @@ Before a melee attack if you have at least 1 pip of Strength.
   - to each nearby enemy
 - If your attack roll is less than the target Limit, mark all your Strength.
 
-### Control
+### 2. Control
 
 Before a melee attack if you have a Pocket of 4 or more.
 
@@ -22,18 +22,19 @@ Before a melee attack if you have a Pocket of 4 or more.
   - Strong Hit, choose one effect
   - Critical Hit, choose two effects
 - Effects to choose
-  - The target rolls Pocket Down
-  - Recover your Move OR force the target to Move 1
-- If your attack roll is less than the target Limit, roll Pocket down.
+  - Force the target to roll Pocket Down
+  - Force the target to Move 1
+  - Recover your Move
+- If your attack roll is less than the target Limit, roll Pocket Down.
 
-### Precision
+### 3. Precision
 
 Before a ranged attack if you have at least 1 pip of Dexterity.
 
 - Deal double damage or the target rolls Pocket Down
 - If your attack roll is less than the target Limit, mark all your Dexterity
 
-### Full Defend
+### 4. Full Defend
 
 After being hit if you have at least 1 pip of Dexterity.
 

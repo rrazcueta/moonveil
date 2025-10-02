@@ -4,7 +4,7 @@ Moonveil runs on the Pocket Push. Your **Pocket** lets you swap luck between rol
 
 ## The Core Resolution
 
-When you take a significant action, roll 2d6 and compare to the **Dice Check** (**DC**). At or over the DC is a success. If the result of the roll is unfavorable you can choose to do one or both of the following.
+When you take a risk, roll 2d6 and compare to the **Dice Check** (**DC**). At or over the DC is a success. If the result of the roll is unfavorable you can choose to do one or both of the following.
 
 1. **Pocket**: Replace one of the dice with your Pocket
 2. **Push**: Mark a pip in a relevant Ability to reroll
@@ -29,12 +29,12 @@ In a strong or weak position, roll an extra die.
 
 ## Pocket Rolls
 
-Some effects force a change to Pocket. Seekers can mark Dexterity to reroll these rolls.
-
-- **Pocket Roll**: set your Pocket to d6.
+- **Pocket**: set your Pocket to d6.
 - **Pocket Up**: roll d6 and compare to your Pocket. Take the bigger value.
 - **Pocket Down**: roll d6 and compare to your Pocket. Take the smaller value.
 
-## Exploding Roll
+You can mark Dexterity to reroll.
 
-Roll d6. If the outcome is 6, roll another Exploding Roll. Add all dice rolled this way.
+## Exploding Rolls
+
+Rolls denoted by an asterisk are exploding rolls. Reroll these rolls on 6, adding all the dice rolled this way.

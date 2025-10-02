@@ -23,7 +23,7 @@ Limit: 11
 - Movement
   - Charge! Movement is an Attack at Disadvantage
 - Attack
-  - Swipe! Attack 2 Different Targets Critical Hit +d6\*
+  - Swipe! Attack 2 Different Targets Strong Hit +d6
 
 ## Flying Lizard
 
@@ -53,5 +53,5 @@ Limit: 11
   -Grounded Claws -> 2x Attack
 
 Attacks an entire area
-Any Hit Moves Target 1, +d6* damage
-Critical Hit +2d6* more damage
+Any Hit Moves Target 1, +d6 damage
+Critical Hit +2d6 more damage

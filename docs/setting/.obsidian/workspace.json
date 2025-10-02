@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "Red Badger Trading Company"
             }
+          },
+          {
+            "id": "ddae3061695d13d9",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.14"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.14"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -184,7 +196,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "00cc92c1338dab91",
+  "active": "ddae3061695d13d9",
   "lastOpenFiles": [
     "Characters/Brandt Tonis.md",
     "Characters/Pytear Prezelanus.md",
