@@ -1,8 +1,8 @@
 # Rolling and the Pocket Push
 
-Moonveil runs on the Pocket Push. Your **Pocket** lets you swap luck between rolls, while your **Ability Points** can be spent to press harder when the dice don’t fall your way. Every choice carries forward—each roll shifts your odds for the next.
+The core resolution is a controlled 2d6 roll, **The Pocket Push**. Your **Pocket** lets you swap luck between rolls, while your **Ability Points** can be spent to press harder when the dice don’t fall your way. Every choice carries forward—each roll shifts your odds for the next.
 
-## The Core Resolution
+## The Pocket Push
 
 When you take a risk, roll 2d6 and compare to the **Dice Check** (**DC**). At or over the DC is a success. If the result of the roll is unfavorable you can choose to do one or both of the following.
 

@@ -2,9 +2,13 @@
 
 You are a Seeker exploring the Moonveil looking for fallen Pieces of the Moon.
 
-## Level Ability and Hit Points
+## Level, Abilities, and Hit Points
 
-Write the numbers [2, 2, 1, 1] on your four **Ability Points** or roll d6.
+Start at **Level** 1.
+
+Begin with two 2’s and two 1’s to assign to their four **Ability Points** in Strength, Dexterity, Insight, and Willpower.
+
+You may choose where to place them yourself, or roll 1d6 and use the distribution from the table below:
 
 | d6  | Strength | Dexterity | Insight | Willpower |
 | --- | :------: | :-------: | :-----: | :-------: |
@@ -54,7 +58,7 @@ Start with d6 **Coin** and 3 **Dungeon Gear**. Then choose or roll d66 twice for
 
 **Defense**: Add Evade and Pocket. Defense can never reach your Limit—if the total would meet or pass it, lower it to one less than your Limit. Place your Pocket die on your Hit Track at your Defense.
 
-Finally set your **Level** to 1 and fill in your **Name** and **Portrait**.
+Finally fill in your **Name** and **Portrait**.
 
 <!-- \clearpage
 
