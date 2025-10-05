@@ -70,7 +70,7 @@ export function ItemTracker({
           color:
             items.length > max
               ? "red"
-              : items.length == max
+              : items.length === max
               ? "yellow"
               : "lightgray",
           marginTop: "0.25em",

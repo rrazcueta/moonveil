@@ -1,8 +1,6 @@
 import { createContext, useContext, useState } from "react";
 import { RandomizeCharacter } from "./CharacterRandomizer";
 
-const roll = () => Math.ceil(Math.random() * 6);
-
 const CharacterSheetContext = createContext(undefined);
 
 export function CharacterSheetProvider({ children }) {
