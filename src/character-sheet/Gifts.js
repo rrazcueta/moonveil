@@ -9,21 +9,22 @@ export function PickGifts() {
     { on: [3], items: [{ description: "Hammer, Critical Damage +d6*" }] },
     { on: [4], items: [{ description: "Bow, Ranged 2, Silent" }] },
     { on: [5], items: [{ description: "Whip, On Any Hit Pocket Down" }] },
-    { on: [6], items: [{ description: "A Bomb, 4d6 damage" }] },
+    { on: [6], items: [{ description: "A Bomb, 4d6 damage, small area" }] },
   ];
 
   const armor = [
-    { on: [1, 2], items: [{ description: "Helmet, +1 Limit" }] },
-    { on: [3, 4], items: [{ description: "Shield, Pocket Even? +1 Evade" }] },
+    { on: [1, 2], items: [{ description: "Helmet, Protected" }] },
+    {
+      on: [3, 4],
+      items: [{ description: "Shield, Evasive" }],
+    },
     {
       on: [5],
-      items: [{ description: "Armor, Damage Reduction 1, Breaks On Critical" }],
+      items: [{ description: "Armor, Resist 1, Breakable" }],
     },
     {
       on: [6],
-      items: [
-        { description: "Cloak, Can Pocket Roll On Move, Breaks On Critical" },
-      ],
+      items: [{ description: "Cloak, Poised, Breakable" }],
     },
   ];
 

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { useCharacterSheet } from "./CharacterSheet";
 import { Ability } from "./Ability";
 import { NamedEditableField } from "./EditableFields";
@@ -15,6 +15,7 @@ function CharacterDisplay() {
   const { sheet, updateSheet } = useCharacterSheet();
   const [tab, setTab] = useState("system"); // "system" | "ability" | "actions"
   const [dice, setDice] = useState(null);
+  const [keywords, setKeywords] = React.useState([]);
 
   // --- Save & Load ---
   function saveCharacter() {
@@ -161,7 +162,11 @@ function CharacterDisplay() {
       case "recovery":
         return (
           <>
-            <button onClick={rally} style={{ marginRight: "0.5em" }}>
+            <button
+              onClick={rally}
+              style={{ marginRight: "0.5em" }}
+              disabled={sheet.wil <= 0}
+            >
               🚩 Rally
             </button>
             <button onClick={rest} style={{ marginRight: "0.5em" }}>
@@ -199,30 +204,30 @@ function CharacterDisplay() {
             <button
               onClick={markAbility("str")}
               style={{ marginRight: "0.5em" }}
-              disabled={!dice}
+              disabled={!dice || sheet.str <= 0}
             >
-              🗡️ Strength
+              🗡️ Mark Strength
             </button>
             <button
               onClick={markAbility("dex")}
               style={{ marginRight: "0.5em" }}
-              disabled={!dice}
+              disabled={!dice || sheet.dex <= 0}
             >
-              🏹 Dexterity
+              🏹 Mark Dexterity
             </button>
             <button
               onClick={markAbility("ins")}
               style={{ marginRight: "0.5em" }}
-              disabled={!dice}
+              disabled={!dice || sheet.ins <= 0}
             >
-              🧠 Insight
+              🧠 Mark Insight
             </button>
             <button
               onClick={markAbility("wil")}
               style={{ marginRight: "0.5em" }}
-              disabled={!dice}
+              disabled={!dice || sheet.wil <= 0}
             >
-              🔥 Willpower
+              🔥 Mark Willpower
             </button>
             <button
               onClick={() => {
@@ -239,6 +244,17 @@ function CharacterDisplay() {
         return null;
     }
   };
+
+  const evade = useMemo(() => {
+    const evasiveBonus =
+      keywords.includes("evasive") && sheet.pocket % 2 === 0 ? 1 : 0;
+    return sheet.evade + evasiveBonus;
+  }, [sheet.evade, sheet.pocket, keywords]);
+
+  const limit = useMemo(() => {
+    const protectedBonus = keywords.includes("protected") ? 1 : 0;
+    return sheet.limit + protectedBonus;
+  }, [sheet.limit, keywords]);
 
   return (
     <div align="left">
@@ -267,32 +283,36 @@ function CharacterDisplay() {
         Hit Track:{" "}
         <span>
           Evade
-          <span style={{ color: "white" }}>
-            {" "}
-            <NamedEditableField propertyName="evade" />
-          </span>
+          <span style={{ color: "white" }}>{` ${evade}`}</span>
         </span>
         ,{" "}
         <span title="Defense = Evade + Pocket">
           Defense
           <span style={{ color: "yellow" }}>
             {" "}
-            {Math.min(9, 5 + Number(sheet.pocket))}
+            {Math.min(9, evade + Number(sheet.pocket))}
           </span>
         </span>
         ,{" "}
         <span>
           Limit
-          <span style={{ color: "red" }}>
-            {" "}
-            <NamedEditableField propertyName="limit" />
-          </span>
+          <span style={{ color: "red" }}>{` ${limit}`}</span>
         </span>
       </p>
       <p>
         Ability Points: {Ability("Strength")}, {Ability("Dexterity")},{" "}
         {Ability("Insight")}, {Ability("Willpower")}
       </p>
+      {keywords.length > 0 ? (
+        <p>
+          Keywords:{" "}
+          {keywords
+            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(", ")}
+        </p>
+      ) : (
+        <></>
+      )}
       <h3>Backpack & Equipment</h3>
       <ItemTracker
         value={sheet.backpack}
@@ -302,6 +322,7 @@ function CharacterDisplay() {
         max={6 + Number(sheet.maxWil)}
         element={"Slot"}
         pastTense={"filled"}
+        onKeywordsChange={setKeywords}
       />
       <ItemTracker
         value={sheet.free}
@@ -310,6 +331,7 @@ function CharacterDisplay() {
         style={{ color: "lightyellow" }}
         element={"Freebie"}
         pastTense={"carried"}
+        showIndex={false}
       />
       <h3>Magic & Skills</h3>
       <ItemTracker
@@ -319,6 +341,7 @@ function CharacterDisplay() {
         style={{ color: "lightyellow" }}
         element={"Feat"}
         pastTense={"known"}
+        onKeywordsChange={setKeywords}
       />
     </div>
   );

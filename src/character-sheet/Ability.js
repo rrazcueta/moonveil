@@ -17,6 +17,7 @@ export const Ability = (ability) => {
   const perc = max ? points / max : 0;
 
   let color = "white";
+  if (perc > 1) color = "green";
   if (perc < 2 / 3) color = "yellow";
   if (perc <= 0) color = "red";
 
