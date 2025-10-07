@@ -8,9 +8,9 @@ Wager your Ability Points to perform Gambits.
 
 Before a melee attack if you have at least 1 pip of Strength.
 
-- On a Strong Hit or better, apply d6 bonus damage to
-  - the original target or...
-  - to each nearby enemy
+- On a Strong Hit or better, apply
+  - d6\* bonus damage to the original target or
+  - d6 diminishing damage to each nearby enemy
 - If your attack roll is less than the target Limit, mark all your Strength.
 
 ### 2. Control

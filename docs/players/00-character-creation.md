@@ -19,7 +19,7 @@ You may choose where to place them yourself, or roll 1d6 and use the distributio
 | 5   |    1     |     2     |    1    |     2     |
 | 6   |    1     |     1     |    2    |     2     |
 
-Then determine your **Hit Points**. Set HP to 1d6 + (3 x Strength).
+**Hit Points**: Your distance from Death. Roll a single d6, add (3 x Strength).
 
 \clearpage
 

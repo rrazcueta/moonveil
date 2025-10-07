@@ -2,6 +2,8 @@
 - Plan out the guide section
 - Clean up
 
+clean up base create-react-app stuff
+
 Look into:
 Jekyll
 docusaurus

@@ -1,6 +1,6 @@
 # Rolling and the Pocket Push
 
-The core resolution is a controlled 2d6 roll, **The Pocket Push**. Your **Pocket** lets you swap luck between rolls, while your **Ability Points** can be spent to press harder when the dice don’t fall your way. Every choice carries forward—each roll shifts your odds for the next.
+The core resolution is a controlled 2d6 roll, **The Pocket Push**. Your **Pocket** lets you swap luck between rolls, and your **Ability Points** can be spent to press harder when the dice don’t fall your way. Every choice carries forward—each roll shifts your odds for the next.
 
 ## The Pocket Push
 
@@ -18,23 +18,26 @@ The Guide indicates which Abilities to use for a roll.
 - **Insight**: depth of knowledge
 - **Willpower**: inner drive
 
-You can mark a number of pips in an Ability up to its value.
+An Ability's value is the number of pips you can mark for that Ability.
 
 ### Advantage and Disadvantage
 
-In a strong or weak position, roll an extra die.
+In Advantage roll an extra die and remove the worst. In Disadvantage roll an extra die and lose the best.
 
-- **Advantage**: remove the smaller die result.
-- **Disadvantage**: remove the bigger die result.
+\clearpage
 
 ## Pocket Rolls
+
+Your Pocket fluctuates with your fate. You can mark Dexterity to reroll any Pocket roll.
 
 - **Pocket**: set your Pocket to d6.
 - **Pocket Up**: roll d6 and compare to your Pocket. Take the bigger value.
 - **Pocket Down**: roll d6 and compare to your Pocket. Take the smaller value.
 
-You can mark Dexterity to reroll.
-
 ## Exploding Rolls
 
 Rolls denoted by an asterisk are exploding rolls. Reroll these rolls on 6, adding all the dice rolled this way.
+
+## Diminishing Rolls
+
+Each successive die can be at most the one less than the previous die. E.g. rolling 6, 3, 5 results in 6 + 3 + 2 (diminshed).

@@ -1,5 +1,3 @@
-Date: 25/10/1
-
 # Pocket Damage
 
 I really want to get Pocket control right.

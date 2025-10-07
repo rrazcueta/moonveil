@@ -1,5 +1,3 @@
-Date: 25/10/2
-
 # Changes
 
 - Defense is Min(Evade + Pocket, Limit -1)

@@ -11,16 +11,46 @@ function roll(howMany = 1) {
     : Math.ceil(Math.random() * 6) + roll(howMany - 1);
 }
 
+/*
+
+Text
+
+Buttons
+Roll d6, Roll 2d6, Roll +d6, Clear
+
+Roll d6, Roll 2d6, Adv, Disadv, Mark Str/Dex/Ins/Wil, Confirm
+
+When Roll 2d6 is clicked then Mark buttons are unlocked
+
+Rolled X.
+Rolled [X, Y] for Z.
+Rolled [X, Y, Z, ...]. Best A. Worst B.
+
+*/
+
 function CharacterDisplay() {
   const { sheet, updateSheet } = useCharacterSheet();
   const [tab, setTab] = useState("system"); // "system" | "ability" | "actions"
   const [dice, setDice] = useState(null);
+  const [message, setMessage] = useState("Nothing rolled");
   const [keywords, setKeywords] = React.useState([]);
+
+  const evade = useMemo(() => {
+    const evasiveBonus =
+      keywords.includes("evasive") && sheet.pocket % 2 === 0 ? 1 : 0;
+    return sheet.evade + evasiveBonus;
+  }, [sheet.evade, sheet.pocket, keywords]);
+
+  const limit = useMemo(() => {
+    const protectedBonus = keywords.includes("protected") ? 1 : 0;
+    return sheet.limit + protectedBonus;
+  }, [sheet.limit, keywords]);
 
   // --- Save & Load ---
   function saveCharacter() {
     try {
       localStorage.setItem("moonveil-character", JSON.stringify(sheet));
+      setMessage("Saved");
       alert("Character saved!");
     } catch (err) {
       console.error("Error saving character:", err);
@@ -33,6 +63,7 @@ function CharacterDisplay() {
       const saved = localStorage.getItem("moonveil-character");
       if (saved) {
         updateSheet(JSON.parse(saved));
+        setMessage("Loaded");
         alert("Character loaded!");
       } else {
         alert("No saved character found.");
@@ -45,34 +76,73 @@ function CharacterDisplay() {
 
   function randomizeCharacter() {
     updateSheet(RandomizeCharacter());
+    setMessage("New character");
+  }
+
+  function rolld6() {
+    const a = roll();
+    setDice([a]);
+    setMessage(`Roll ${a}`);
   }
 
   function roll2d6() {
     const a = roll();
     const b = roll();
-    setDice([Math.min(a, b), Math.max(a, b)]);
+    const ordered = [Math.min(a, b), Math.max(a, b)];
+    setDice(ordered);
+    setMessage(
+      `Roll [${ordered.join(", ")}] for ${ordered.reduce(
+        (total, n) => total + n
+      )}`
+    );
+  }
+
+  function reroll(ability) {
+    const arr = [];
+    for (let i = 0; i < dice.length; i++) arr.push(roll());
+    arr.sort((a, b) => a - b);
+    setDice(arr);
+    setMessage(
+      `${ability} reroll to [${arr.join(", ")}] for ${arr.reduce(
+        (total, n) => total + n
+      )}`
+    );
   }
 
   function swapLow() {
-    if (!dice) return;
-    const oldPocket = sheet.pocket;
-    const low = dice[0];
-    updateSheet({ pocket: low });
-    setDice([Math.min(oldPocket, dice[1]), Math.max(oldPocket, dice[1])]);
+    if (!dice || dice.length != 2) return;
+
+    const oldPocket = Number(sheet.pocket);
+    updateSheet({ pocket: dice[0] });
+    const newDice = [oldPocket, dice[1]].sort((a, b) => a - b);
+    setDice(newDice);
+
+    setMessage(
+      `Swap to [${newDice.join(", ")}] for ${newDice.reduce(
+        (total, n) => total + n
+      )}`
+    );
   }
 
   function swapHigh() {
-    if (!dice) return;
-    const oldPocket = sheet.pocket;
-    const high = dice[1];
-    updateSheet({ pocket: high });
-    setDice([Math.min(oldPocket, dice[0]), Math.max(oldPocket, dice[0])]);
+    if (!dice || dice.length != 2) return;
+
+    const oldPocket = Number(sheet.pocket);
+    updateSheet({ pocket: dice[1] });
+    const newDice = [oldPocket, dice[0]].sort((a, b) => a - b);
+    setDice(newDice);
+
+    setMessage(
+      `Swap to [${newDice.join(", ")}] for ${newDice.reduce(
+        (total, n) => total + n
+      )}`
+    );
   }
 
   function markAbility(ability) {
     return () => {
       if (Number(sheet[ability]) > 0) {
-        roll2d6();
+        reroll(ability.toUpperCase());
         updateSheet({ [ability]: sheet[ability] - 1 });
       }
     };
@@ -86,6 +156,9 @@ function CharacterDisplay() {
         ins: sheet.maxIns,
         wil: sheet.wil - 1,
       });
+      setMessage("Recovered STR, DEX, INS");
+    } else {
+      setMessage("Not enough WIL to Rally");
     }
   }
 
@@ -100,19 +173,38 @@ function CharacterDisplay() {
       hp: newMaxHP,
       maxHp: newMaxHP,
     });
+
+    setMessage("Recovered all Stats and HP.");
   }
 
-  function levelUp() {
+  function levelUp(ability) {
     const newMaxHP = Math.max(
       roll(sheet.level + 1) + sheet.str * 3,
       sheet.maxHp
     );
 
-    updateSheet({
-      level: sheet.level + 1,
-      hp: newMaxHP,
-      maxHp: newMaxHP,
-    });
+    const maxMap = {
+      str: "maxStr",
+      dex: "maxDex",
+      ins: "maxIns",
+      wil: "maxWil",
+    };
+
+    const update = {
+      level: Number(sheet.level) + 1,
+      hp: Number(newMaxHP),
+      maxHp: Number(newMaxHP),
+      [ability]: sheet[maxMap[ability]] + 1,
+      [maxMap[ability]]: sheet[maxMap[ability]] + 1,
+    };
+
+    updateSheet(update);
+
+    setMessage(
+      `Level ${update.level}! Max HP ${
+        update.maxHp
+      }. ${ability.toUpperCase()} +1.`
+    );
   }
 
   const tabButtons = (
@@ -135,7 +227,7 @@ function CharacterDisplay() {
         onClick={() => setTab("rolling")}
         style={{ marginRight: "0.5em" }}
       >
-        🎲 Rolling
+        🎲 Dice
       </button>
     </div>
   );
@@ -172,8 +264,37 @@ function CharacterDisplay() {
             <button onClick={rest} style={{ marginRight: "0.5em" }}>
               🏕️ Rest
             </button>
-            <button onClick={levelUp} style={{ marginRight: "0.5em" }}>
-              🆙 Level Up
+            <button
+              onClick={() => {
+                levelUp("str");
+              }}
+              style={{ marginRight: "0.5em" }}
+            >
+              🆙 Level Up STR
+            </button>
+            <button
+              onClick={() => {
+                levelUp("dex");
+              }}
+              style={{ marginRight: "0.5em" }}
+            >
+              🆙 Level Up DEX
+            </button>
+            <button
+              onClick={() => {
+                levelUp("ins");
+              }}
+              style={{ marginRight: "0.5em" }}
+            >
+              🆙 Level Up INS
+            </button>
+            <button
+              onClick={() => {
+                levelUp("wil");
+              }}
+              style={{ marginRight: "0.5em" }}
+            >
+              🆙 Level Up WIL
             </button>
           </>
         );
@@ -181,62 +302,70 @@ function CharacterDisplay() {
         return (
           <>
             <button
+              onClick={rolld6}
+              style={{ marginRight: "0.5em" }}
+              disabled={dice}
+            >
+              🎲 Roll d6
+            </button>
+            <button
               onClick={roll2d6}
               style={{ marginRight: "0.5em" }}
-              disabled={!!dice}
+              disabled={dice}
             >
-              🎲 Roll
+              🎲🎲 Roll 2d6
             </button>
             <button
               onClick={swapLow}
               style={{ marginRight: "0.5em" }}
-              disabled={!dice}
+              disabled={!dice || dice.length != 2}
             >
-              🎲 Swap Low
+              ↘️ Swap Low
             </button>
             <button
               onClick={swapHigh}
               style={{ marginRight: "0.5em" }}
-              disabled={!dice}
+              disabled={!dice || dice.length != 2}
             >
-              🎲 Swap High
+              ↗️ Swap High
             </button>
             <button
               onClick={markAbility("str")}
               style={{ marginRight: "0.5em" }}
               disabled={!dice || sheet.str <= 0}
             >
-              🗡️ Mark Strength
+              🗡️ Mark STR
             </button>
             <button
               onClick={markAbility("dex")}
               style={{ marginRight: "0.5em" }}
               disabled={!dice || sheet.dex <= 0}
             >
-              🏹 Mark Dexterity
+              🏹 Mark DEX
             </button>
             <button
               onClick={markAbility("ins")}
               style={{ marginRight: "0.5em" }}
               disabled={!dice || sheet.ins <= 0}
             >
-              🧠 Mark Insight
+              🧠 Mark INS
             </button>
             <button
               onClick={markAbility("wil")}
               style={{ marginRight: "0.5em" }}
               disabled={!dice || sheet.wil <= 0}
             >
-              🔥 Mark Willpower
+              🔥 Mark WIL
             </button>
             <button
               onClick={() => {
+                setMessage(`${dice.reduce((total, n) => total + n)} rolled`);
                 setDice(null);
               }}
               style={{ marginRight: "0.5em" }}
               disabled={!dice}
             >
-              🎲 Confirm
+              ✅ Confirm
             </button>
           </>
         );
@@ -245,32 +374,13 @@ function CharacterDisplay() {
     }
   };
 
-  const evade = useMemo(() => {
-    const evasiveBonus =
-      keywords.includes("evasive") && sheet.pocket % 2 === 0 ? 1 : 0;
-    return sheet.evade + evasiveBonus;
-  }, [sheet.evade, sheet.pocket, keywords]);
-
-  const limit = useMemo(() => {
-    const protectedBonus = keywords.includes("protected") ? 1 : 0;
-    return sheet.limit + protectedBonus;
-  }, [sheet.limit, keywords]);
-
   return (
     <div align="left">
       <div style={{ marginBottom: "1em" }}>
         {tabButtons}
         <div style={{ marginBottom: "1em" }}>{tabContent()}</div>
       </div>
-      {dice && dice.length === 2 ? (
-        <h1>
-          Pocket {sheet.pocket} and Rolled [{dice.join(", ")}] for total{" "}
-          {dice[0] + dice[1]}
-        </h1>
-      ) : (
-        <></>
-      )}
-
+      <h1>{message}</h1>
       <h2>
         <NamedEditableField propertyName="name" />,{" "}
         <NamedEditableField propertyName="class" />, Level{" "}

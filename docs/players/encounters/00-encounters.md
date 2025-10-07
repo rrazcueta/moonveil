@@ -1,6 +1,6 @@
 # Encounters
 
-In a clash of steel or a sprung trap - each moment is a test. Dice roll. Pockets shift. Ability Points are spent. When you hold the advantage, strike!
+In a clash of steel or a sprung trap - each moment is a test. You're rolling dice, swapping your Pocket, and spending Ability Points. When you hold the advantage, strike!
 
 ## Initiative
 
@@ -12,4 +12,4 @@ Encounters are run in rounds. Start each round with a d6 **Initiative** roll to 
   - Trigger world events
 - **Closing Seekers**: if you have yet to take your turn, take it here
 
-On your turn, take a Move and an Action in any order alongside other Seekers taking their turns.
+On your turn, take a **Move** and an **Action** in any order alongside other Seekers taking their turns.
