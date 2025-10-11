@@ -27,7 +27,7 @@ Fast and evasive.
 
 ## Wolf
 
-- Hit Points: 2 + d6
+- Hit Points: 2 +d6
 - Evade: 5
 - Limit: 10
 - Attacks at Advantage when there is a Pack Leader nearby
@@ -40,13 +40,37 @@ Fast and evasive.
 - Attacks at Advantage
 - Howls, costs Move, nearby Wolves roll Pocket.
 
+## Dire Wolf
+
+- Hit Points: 6 +d6
+- Evade: 5
+- Limit: 10
+- Attacks at Advantage when there is a Pack Leader nearby
+- At Pocket 6 Can Move-Attack
+
+## Dire Wolf Pack Leader
+
+- Hit Points: 6 +d6
+- Evade: 5
+- Limit: 10
+- Attacks at Advantage when there is a Pack Leader nearby
+- At Pocket 6 Can Move-Attack
+
 ## Big Bat
 
 - Hit Points: 1 +d6/3
 - Evade: 6
-- Limit: 8
+- Limit: 9
 - Maximum Damage 3
 - Recovers its Move after an Attack
+
+## Giant Bat
+
+- Hit Points: 3 +d6
+- Evade: 6
+- Limit: 9
+- Recovers its Move after an Attack
+- On Hit +1 HP
 
 ## Snake
 
@@ -55,6 +79,14 @@ Fast and evasive.
 - Limit: 10
 - Maximum Damage 3
 - On Hit mark a pip or take d6 damage
+
+## Giant Snake
+
+- Hit Points: 6 + d6/2
+- Evade: 6
+- Limit: 10
+- On Hit mark a pip or take d6 damage
+- Wrap Attack, DC10, on Wrap enemy Evade=0
 
 ## Bear
 
@@ -73,3 +105,12 @@ Fast and evasive.
 - Fire Breath
   - Prepare, costs Move, ends turn. Next turn Breath Attack
   - Breath Attack, costs Action, anyone near rolls DC7 Dex or takes 3d6 damage
+
+## Giant Tusked Elephant
+
+- Hit Points: 36 +3d6
+- Evade 3, Limit 11
+- Damage Reduction 2
+- 2x Attacks with Advantage, Strong Hit +d6
+- Grab and Toss
+- Heavy Stomps - anyone near rolls Pocket Down, Attacks with Disadvantage

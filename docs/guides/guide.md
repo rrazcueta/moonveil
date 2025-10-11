@@ -1,3 +1,37 @@
+ichor
+night blooms
+moon grass
+pearls
+silver
+
+Sacrifices
+Sacrifice hand, fingers
+tattooos
+blindness
+memories
+nightmares - sacrifice sleep
+
+Moon stuff
+moths
+cycles
+life and death
+rabbits
+wolves
+tides
+water
+moon grass
+mountains
+owls, bats
+night bloom
+silver, silver animals, plants
+dreams
+ghosts
+pearl
+crystals
+fertility
+time
+sand
+
 NOTE!! Before adding new rules, check to see if existing rules already solve it
 
 NOTE!! make sure to differentiate one shot death stuff vs campaign death stuff

@@ -1,4 +1,4 @@
-# Primeval Monsters
+# Big Reptiles
 
 Big Hit Points, Big Damage, Low Chance To Hit
 
@@ -6,30 +6,39 @@ Big Hit Points, Big Damage, Low Chance To Hit
 
 3 Pack
 
-Hit Points: d6/2
-Evade: 6
-Limit: 10
-
+- Hit Points: d6/2
+- Evade: 6
+- Limit: 10
 - Attacks
   - Minimum Damage 2
-  - If there are as many Razor Lizards as targets, attack with Advantage
+  - If there are as many Razor Lizards as targets nearby, attack with Advantage
+
+## Big Razor Lizard
+
+2 Pack
+
+- Hit Points: 4 +d6
+- Evade: 6
+- Limit: 10
+- Attacks
+  - Minimum Damage 3
+  - If there are as many Razor Lizards as targets nearby, attack with Advantage
 
 ## Herd Lizard
 
-Hit Points: 20 +d6
-Evade: 3
-Limit: 11
-
+- Hit Points: 20 +d6
+- Evade: 3
+- Limit: 11
 - Movement
-  - Charge! Movement is an Attack at Disadvantage
+  - Stomp! Movement is an Attack at Disadvantage
 - Attack
   - Swipe! Attack 2 Different Targets Strong Hit +d6
 
 ## Flying Lizard
 
-Hit Points: 15 + d6
-Evade: 6
-Limit: 10
+- Hit Points: 15 + d6
+- Evade: 6
+- Limit: 10
 
 - Movement
   - At Pocket 1 it's Grounded.
@@ -42,16 +51,14 @@ Hint: Probably need something like Ranged or a Net
 
 ## Long Neck Lizard
 
-Hit Points: 40 +5d6
-Evade: 3
-Limit: 11
+- Hit Points: 40 +6d6
+- Evade: 3
+- Limit: 11
 
 - Movement
   - Charge! Movement is an Attack at Disadvantage
-- Attacks
-  -Move -> Attack then flies in with beak poke Strong Hit +2 Damage
-  -Grounded Claws -> 2x Attack
-
-Attacks an entire area
-Any Hit Moves Target 1, +d6 damage
-Critical Hit +2d6 more damage
+- Attack
+  - Swipe! Attack 2 Different Targets
+  - Attacks an entire area
+  - Any Hit Moves Target 1, d6 damage
+  - Critical Hit +2d6 more damage

@@ -165,6 +165,42 @@ const hammer = weaponSmith({
   criticalBonus: () => explodingRoll(),
 });
 
+const axe = weaponSmith({
+  description: "Axe",
+  minimum: 2,
+  criticalBonus: () => 2,
+});
+
+const fencing = weaponSmith({
+  description: "Fencing Sword",
+  minimum: 2,
+  strongBonus: () => 1,
+});
+
+const halberd = weaponSmith({
+  description: "2H Halberd",
+  minimum: 2,
+  strongBonus: () => 1,
+  criticalBonus: () => explodingRoll(),
+});
+
+const lance = weaponSmith({
+  description: "2H Lance",
+  strongBonus: () => 2,
+  criticalBonus: () => explodingRoll(),
+});
+
+const bigHammer = weaponSmith({
+  description: "2H Hammer",
+  criticalBonus: () => explodingRoll() + explodingRoll(),
+});
+
+const zwei = weaponSmith({
+  description: "2H Sword",
+  minimum: 3,
+  criticalBonus: () => explodingRoll(),
+});
+
 function getAverage(weapon: weapon, defend = false) {
   const trials = 10000;
   let totalDamage = 0;
@@ -172,8 +208,8 @@ function getAverage(weapon: weapon, defend = false) {
   let damageArr: number[] = [];
   for (let i = 0; i < trials; i++) {
     const { damage, pocket } = rollAttack({
-      attacker: characterGen({ weapon, pocket: 6 }),
-      defender: characterGen({ evade: 5, pocket: roll(), limit: 10 }),
+      attacker: characterGen({ weapon, pocket: roll() }),
+      defender: characterGen({ evade: 5, pocket: 5, limit: 10 }),
       defend,
     });
     totalDamage += damage;
@@ -201,6 +237,13 @@ console.log(swordAvg.damageArrString);
 console.log(swordAvgD.averages);
 console.log(swordAvgD.damageArrString);
 
+const fencingAvg = getAverage(fencing);
+const fencingAvgD = getAverage(fencing, true);
+console.log(fencingAvg.averages);
+console.log(fencingAvg.damageArrString);
+console.log(fencingAvgD.averages);
+console.log(fencingAvgD.damageArrString);
+
 const spearAvg = getAverage(spear);
 const spearAvgD = getAverage(spear, true);
 console.log(spearAvg.averages);
@@ -214,6 +257,41 @@ console.log(hammerAvg.averages);
 console.log(hammerAvg.damageArrString);
 console.log(hammerAvgD.averages);
 console.log(hammerAvgD.damageArrString);
+
+const axeAvg = getAverage(axe);
+const axeAvgD = getAverage(axe, true);
+console.log(axeAvg.averages);
+console.log(axeAvg.damageArrString);
+console.log(axeAvgD.averages);
+console.log(axeAvgD.damageArrString);
+
+const halberdAvg = getAverage(halberd);
+const halberdAvgD = getAverage(halberd, true);
+console.log(halberdAvg.averages);
+console.log(halberdAvg.damageArrString);
+console.log(halberdAvgD.averages);
+console.log(halberdAvgD.damageArrString);
+
+const lanceAvg = getAverage(lance);
+const lanceAvgD = getAverage(lance, true);
+console.log(lanceAvg.averages);
+console.log(lanceAvg.damageArrString);
+console.log(lanceAvgD.averages);
+console.log(lanceAvgD.damageArrString);
+
+const bigHammerAvg = getAverage(bigHammer);
+const bigHammerAvgD = getAverage(bigHammer, true);
+console.log(bigHammerAvg.averages);
+console.log(bigHammerAvg.damageArrString);
+console.log(bigHammerAvgD.averages);
+console.log(bigHammerAvgD.damageArrString);
+
+const zweiAvg = getAverage(zwei);
+const zweiAvgD = getAverage(zwei, true);
+console.log(zweiAvg.averages);
+console.log(zweiAvg.damageArrString);
+console.log(zweiAvgD.averages);
+console.log(zweiAvgD.damageArrString);
 
 // console.log(rollAttack({ attacker: characterGen({ weapon: sword }) }));
 

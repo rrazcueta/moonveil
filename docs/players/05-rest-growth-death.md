@@ -10,7 +10,7 @@ You may choose to **Make a Record** — a note, sketch, meal, or other memento o
 
 - Describe your creation to the table
 - Place it in the **Extra** section of your Backpack
-- Roll DC7 Insight to determine if it was successful.
+- Roll DC7 Insight to determine if it was successful
 
 ### 2. Level Up
 

@@ -1,71 +1,39 @@
-ichor
-night blooms
-moon grass
-pearls
-silver
-
-Sacrifices
-Sacrifice hand, fingers
-tattooos
-blindness
-memories
-nightmares - sacrifice sleep
-
-Moon stuff
-moths
-cycles
-life and death
-rabbits
-wolves
-tides
-water
-moon grass
-mountains
-owls, bats
-night bloom
-silver, silver animals, plants
-dreams
-ghosts
-pearl
-crystals
-fertility
-time
-sand
-
 # Drafting Skills
 
-| d6  | d6  | Skill                                                                                             |
+Covered - Evade +1
+
+| d6  | d6  | Gift                                                                                              |
 | --- | --- | ------------------------------------------------------------------------------------------------- |
-| 1   | 1   | Puncher: Roll Advantage On Unarmed Attacks                                                        |
-|     | 2   | Heavy: Bonus +d6\* damage on Critical Hit                                                         |
-|     | 3   | Eagle: Bonus +2 damage on Strong Hit                                                              |
-|     | 4   | Technical: Bonus +1 damage on Any Hit                                                             |
-|     | 5   | Dual: Roll 2x Attack both at Disadvantage                                                         |
-|     | 6   | Act Again: When rolling exactly Defense, gain another Action                                      |
-| 2   | 1   | Positioned: At Pocket 6, target your attacks                                                      |
-|     | 2   | Backstep: When starting a turn with Pocket 1, roll Pocket                                         |
-|     | 3   | Sneak Attack: When moving behind an enemy, deal Bigger Die damage                                 |
-|     | 4   | Powered Up: Deal +1 damage for each pip marked this turn                                          |
-|     | 5   | Called Gambit: gamble 1 Dex. Deal +d6\* on Strong Hit                                             |
-|     | 6   | Speedy: You have 2 Moves every turn                                                               |
+| 1   | 1   | Fighter: Attack Rolls +1                                                                          |
+|     | 2   | Quick: Initiative Rolls +1                                                                        |
+|     | 3   | Technical: Bonus +1 damage on Any Hit                                                             |
+|     | 4   | Accurate: Bonus +2 damage on Strong Hit                                                           |
+|     | 5   | Mighty: Bonus +d6\* damage on Critical Hit                                                        |
+|     | 6   | Balanced: Roll Pocket when starting a turn with Pocket 1                                          |
+| 2   | 1   | Sneak Attack: Unnoticed? Hits deal Bigger Die Damage                                              |
+|     | 2   | Ambidextrous: You can attempt 2 Disadvantaged 1H weapon attacks in one Action.                    |
+|     | 3   | Defender: Pocket 6? Nearby allies are Covered                                                     |
+|     | 4   | Positioned: Pocket 6? You choose the target of your melee attacks                                 |
+|     | 5   | Spendy: Hits deal +2 damage for each pip marked this turn                                         |
+|     | 6   | Speedy: Once each turn you can mark a Dex to gain a move                                          |
 | 3   | 1   | Mage Blade: Mark Insight to reroll Attacks                                                        |
-|     | 2   | Knowing Gambit: gamble 1 Ins. Deal +2d6\* on Critical Hit                                         |
-|     | 3   | Prepared For This: Mark Insight. Entire party Pocket Up                                           |
-|     | 4   | Known Advantage: Mark Insight. All Enemies Pocket Down.                                           |
-|     | 5   | Magical Field: Mark Insight. Magic Spells 2x Effective                                            |
-|     | 6   | Dark Pact: Mark Willpower to reroll Miracles                                                      |
-| 4   | 1   | Trained Mage: Add +1 to first Magic Rolls                                                         |
-|     | 2   | Master Mage: Add +1 to each successive Magic Reroll                                               |
-|     | 3   | Blood Pact: -d6 HP to reroll Magic                                                                |
+|     | 2   | Trained Mage: On first Magic Rolls +1                                                             |
+|     | 3   | Master Mage: Magic Rolls +1 for each spent pip                                                    |
 |     | 4   | Marked Enemy: Mark Insight. Team gains Advantage against an enemy for d6 rounds                   |
 |     | 5   | Battleplan: Mark Insight. Enemy rolls at Disadvantage for d6 rounds                               |
-|     | 6   | Science: Mark Insight. Spend Dungeon Gear. DC10. Make a potion to recover d6 HP                   |
-| 5   | 1   | Back At It: Rally HP gain at Advantage                                                            |
+|     | 6   | Prepared For This: Mark Insight. Entire party Pocket Up                                           |
+| 4   | 1   | Known Weakness: Mark Insight. Roll Attack with +2d6\* Critical Damage                             |
+|     | 2   | Dark Pact: -d6 HP to reroll a Spell                                                               |
+|     | 3   | Blood Pact: -d6 HP to keep a Spell                                                                |
+|     | 4   | Marked Enemy: Mark Insight. Team gains Advantage against an enemy for d6 rounds                   |
+|     | 5   | Battleplan: Mark Insight. Enemy rolls at Disadvantage for d6 rounds                               |
+|     | 6   | Science: Spend Gear, roll DC10 Insight. Make a potion to recover d6 HP                            |
+| 5   | 1   | Super Recover: HP gain from Rally is rolled at Advantage                                          |
 |     | 2   | Chosen: Gain at most 1 Guilt at a time                                                            |
 |     | 3   | Emergency Powers: Mark Willpower to reroll anything                                               |
-|     | 4   | Quick Rally: Mark Willpower. Erase d6 marked pips, recover d6 HP                                  |
-|     | 5   | Determination: Roll +d6 when recovering HP from Rally                                             |
-|     | 6   | Focus: Pocket Up When Rallying                                                                    |
+|     | 4   | Quick Rally: Spend Move, mark Willpower. Erase d6 marked pips, recover d6 HP                      |
+|     | 5   | Focus: When Rallying Pocket Up                                                                    |
+|     | 6   | Determination: Roll +d6 when recovering HP from Rally                                             |
 | 6   | 1   | Long Term Planning: See 1 more skill every time you draft                                         |
 |     | 2   | Swap Abilities: Swap any 2 Ability Points                                                         |
 |     | 3   | Skill Copy: Copy any skill from an ally or yourself                                               |

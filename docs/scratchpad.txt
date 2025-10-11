@@ -13,7 +13,7 @@ dungeon scrawl
 
 cat docs/index.md docs/players/*.md docs/players/encounters/*.md \
 
-pandoc docs/index.md docs/players/*.md docs/players/encounters/*.md \
+pandoc docs/intro.md docs/players/*.md docs/players/encounters/*.md \
   -o "Moonveil v1.1.pdf" \
   --pdf-engine=xelatex \
   --toc \

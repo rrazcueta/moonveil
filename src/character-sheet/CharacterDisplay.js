@@ -207,30 +207,104 @@ function CharacterDisplay() {
     );
   }
 
-  const tabButtons = (
-    <div style={{ marginBottom: "0em" }}>
-      <button
-        onClick={() => setTab("system")}
-        style={{ marginRight: "0.5em" }}
-        disabled={dice}
-      >
-        🛠️ System
+  function TopMenu() {
+    return (
+      <>
+        <button
+          onClick={() => goTo("system")}
+          style={{ marginRight: "0.5em" }}
+          disabled={dice}
+        >
+          🛠️ System
+        </button>
+        <button
+          onClick={() => goTo("recovery")}
+          style={{ marginRight: "0.5em" }}
+          disabled={dice}
+        >
+          🔄 Recover
+        </button>
+        <button onClick={() => goTo("dice")} style={{ marginRight: "0.5em" }}>
+          🎲 Dice
+        </button>
+      </>
+    );
+  }
+
+  function TopMenuButton() {
+    return (
+      <button onClick={() => GoTo("Top")} style={{ marginRight: "0.5em" }}>
+        ⏪ Back
       </button>
-      <button
-        onClick={() => setTab("recovery")}
-        style={{ marginRight: "0.5em" }}
-        disabled={dice}
-      >
-        🔄 Recover
-      </button>
-      <button
-        onClick={() => setTab("rolling")}
-        style={{ marginRight: "0.5em" }}
-      >
-        🎲 Dice
-      </button>
-    </div>
-  );
+    );
+  }
+
+  function SystemMenu() {
+    return (
+      <>
+        <TopMenuButton />
+        <button onClick={saveCharacter} style={{ marginRight: "0.5em" }}>
+          💾 Save
+        </button>
+        <button onClick={loadCharacter} style={{ marginRight: "0.5em" }}>
+          📂 Load
+        </button>
+        <button onClick={randomizeCharacter} style={{ marginRight: "0.5em" }}>
+          🌀 Randomize
+        </button>
+      </>
+    );
+  }
+
+  function RecoveryMenu() {
+    return (
+      <>
+        <TopMenuButton />
+        <button
+          onClick={rally}
+          style={{ marginRight: "0.5em" }}
+          disabled={sheet.wil <= 0}
+        >
+          🚩 Rally
+        </button>
+        <button onClick={rest} style={{ marginRight: "0.5em" }}>
+          🏕️ Rest
+        </button>
+        <button
+          onClick={() => {
+            levelUp("str");
+          }}
+          style={{ marginRight: "0.5em" }}
+        >
+          🆙 Level Up STR
+        </button>
+        <button
+          onClick={() => {
+            levelUp("dex");
+          }}
+          style={{ marginRight: "0.5em" }}
+        >
+          🆙 Level Up DEX
+        </button>
+        <button
+          onClick={() => {
+            levelUp("ins");
+          }}
+          style={{ marginRight: "0.5em" }}
+        >
+          🆙 Level Up INS
+        </button>
+        <button
+          onClick={() => {
+            levelUp("wil");
+          }}
+          style={{ marginRight: "0.5em" }}
+        >
+          🆙 Level Up WIL
+        </button>
+      </>
+    );
+  }
 
   const tabContent = () => {
     switch (tab) {
@@ -376,10 +450,10 @@ function CharacterDisplay() {
 
   return (
     <div align="left">
-      <div style={{ marginBottom: "1em" }}>
+      {/* <div style={{ marginBottom: "1em" }}>
         {tabButtons}
         <div style={{ marginBottom: "1em" }}>{tabContent()}</div>
-      </div>
+      </div> */}
       <h1>{message}</h1>
       <h2>
         <NamedEditableField propertyName="name" />,{" "}
