@@ -35,3 +35,4 @@ Spend an Action and mark 1 Willpower to
 
 - Erase marked pips in Strength, Dexterity, and Insight
 - Restore 1d6 Hit Points
+- Pocket Up
