@@ -8,10 +8,10 @@ Moves change your location, your relative position, or help you regain your foot
 
 When you take a Move, choose from one of the following or anything else you could easily attempt in a moment:
 
-- Spend 1 Move to cross a Distance of 1.
-- Spend 1 Move to reposition yourself in melee.
-- Spend 1 Move to gain better footing. Roll Pocket.
-- Spend an Action to gain an additional Move.
+- Travel - Spend 1 Move to travel to an adjacent area.
+- Reposition - Spend 1 Move to reposition yourself relative to other things in the same area.
+- Footing - Spend 1 Move to roll Pocket.
+- Quick - Spend an Action to gain an additional Move.
 
 ### Obstacles
 

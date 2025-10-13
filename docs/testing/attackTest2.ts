@@ -2,9 +2,13 @@ function roll(): number {
   return Math.ceil(Math.random() * 6);
 }
 
-function explodingRoll(threshold = 6): number {
-  const r = roll();
-  return r >= threshold ? r + explodingRoll(threshold) : r;
+function explodingRoll(
+  { threshold = 6, advantage = 0 } = { threshold: 6, advantage: 0 }
+): number {
+  const r = advantage > 0 ? Math.max(roll(), roll()) : roll();
+  return r >= threshold
+    ? r + explodingRoll({ threshold, advantage: advantage - 1 })
+    : r;
 }
 
 interface character {
@@ -201,6 +205,13 @@ const zwei = weaponSmith({
   criticalBonus: () => explodingRoll(),
 });
 
+const best = weaponSmith({
+  description: "Lightsaber",
+  minimum: 4,
+  strongBonus: () => 3,
+  criticalBonus: () => explodingRoll() + 1,
+});
+
 function getAverage(weapon: weapon, defend = false) {
   const trials = 10000;
   let totalDamage = 0;
@@ -292,6 +303,13 @@ console.log(zweiAvg.averages);
 console.log(zweiAvg.damageArrString);
 console.log(zweiAvgD.averages);
 console.log(zweiAvgD.damageArrString);
+
+const bestAvg = getAverage(best);
+const bestAvgD = getAverage(best, true);
+console.log(bestAvg.averages);
+console.log(bestAvg.damageArrString);
+console.log(bestAvgD.averages);
+console.log(bestAvgD.damageArrString);
 
 // console.log(rollAttack({ attacker: characterGen({ weapon: sword }) }));
 
