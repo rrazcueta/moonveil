@@ -11,28 +11,11 @@ function roll(howMany = 1) {
     : Math.ceil(Math.random() * 6) + roll(howMany - 1);
 }
 
-/*
-
-Text
-
-Buttons
-Roll d6, Roll 2d6, Roll +d6, Clear
-
-Roll d6, Roll 2d6, Adv, Disadv, Mark Str/Dex/Ins/Wil, Confirm
-
-When Roll 2d6 is clicked then Mark buttons are unlocked
-
-Rolled X.
-Rolled [X, Y] for Z.
-Rolled [X, Y, Z, ...]. Best A. Worst B.
-
-*/
-
 function CharacterDisplay() {
   const { sheet, updateSheet } = useCharacterSheet();
-  const [tab, setTab] = useState("system"); // "system" | "ability" | "actions"
+  const [tab, setTab] = useState();
   const [dice, setDice] = useState(null);
-  const [message, setMessage] = useState("Nothing rolled");
+  const [message, setMessage] = useState("...");
   const [keywords, setKeywords] = React.useState([]);
 
   const evade = useMemo(() => {
@@ -46,7 +29,6 @@ function CharacterDisplay() {
     return sheet.limit + protectedBonus;
   }, [sheet.limit, keywords]);
 
-  // --- Save & Load ---
   function saveCharacter() {
     try {
       localStorage.setItem("moonveil-character", JSON.stringify(sheet));
@@ -79,23 +61,11 @@ function CharacterDisplay() {
     setMessage("New character");
   }
 
-  function rolld6() {
-    const a = roll();
-    setDice([a]);
-    setMessage(`Roll ${a}`);
-  }
-
-  function roll2d6() {
-    const a = roll();
-    const b = roll();
-    const ordered = [Math.min(a, b), Math.max(a, b)];
-    setDice(ordered);
-    setMessage(
-      `Roll [${ordered.join(", ")}] for ${ordered.reduce(
-        (total, n) => total + n
-      )}`
-    );
-  }
+  // function rolld6() {
+  //   const a = roll();
+  //   setDice([a]);
+  //   setMessage(`Roll ${a}`);
+  // }
 
   function reroll(ability) {
     const arr = [];
@@ -107,56 +77,84 @@ function CharacterDisplay() {
         (total, n) => total + n
       )}`
     );
+
+    setTab("action");
   }
 
-  function swapLow() {
-    if (!dice || dice.length != 2) return;
+  // function swapLow() {
+  //   if (!dice || dice.length != 2) return;
 
-    const oldPocket = Number(sheet.pocket);
-    updateSheet({ pocket: dice[0] });
-    const newDice = [oldPocket, dice[1]].sort((a, b) => a - b);
-    setDice(newDice);
+  //   const oldPocket = Number(sheet.pocket);
+  //   updateSheet({ pocket: dice[0] });
+  //   const newDice = [oldPocket, dice[1]].sort((a, b) => a - b);
+  //   setDice(newDice);
 
-    setMessage(
-      `Swap to [${newDice.join(", ")}] for ${newDice.reduce(
-        (total, n) => total + n
-      )}`
-    );
-  }
+  //   setMessage(
+  //     `Swap to [${newDice.join(", ")}] for ${newDice.reduce(
+  //       (total, n) => total + n
+  //     )}`
+  //   );
+  // }
 
-  function swapHigh() {
-    if (!dice || dice.length != 2) return;
+  // function swapHigh() {
+  //   if (!dice || dice.length != 2) return;
 
-    const oldPocket = Number(sheet.pocket);
-    updateSheet({ pocket: dice[1] });
-    const newDice = [oldPocket, dice[0]].sort((a, b) => a - b);
-    setDice(newDice);
+  //   const oldPocket = Number(sheet.pocket);
+  //   updateSheet({ pocket: dice[1] });
+  //   const newDice = [oldPocket, dice[0]].sort((a, b) => a - b);
+  //   setDice(newDice);
 
-    setMessage(
-      `Swap to [${newDice.join(", ")}] for ${newDice.reduce(
-        (total, n) => total + n
-      )}`
-    );
-  }
+  //   setMessage(
+  //     `Swap to [${newDice.join(", ")}] for ${newDice.reduce(
+  //       (total, n) => total + n
+  //     )}`
+  //   );
+  // }
 
   function markAbility(ability) {
     return () => {
       if (Number(sheet[ability]) > 0) {
         reroll(ability.toUpperCase());
         updateSheet({ [ability]: sheet[ability] - 1 });
+      } else {
+        setMessage(
+          `Insufficient ${ability.toUpperCase()} to mark. [${dice.join(", ")}]`
+        );
       }
     };
   }
 
+  function actionRoll() {
+    setTab("action");
+
+    const a = roll();
+    const b = roll();
+    const ordered = [Math.min(a, b), Math.max(a, b)];
+    setDice(ordered);
+    setMessage(
+      `Roll [${ordered.join(", ")}] for ${ordered.reduce(
+        (total, n) => total + n
+      )}`
+    );
+  }
+
+  function confirmActionRoll() {
+    setTab("roll");
+    setMessage(`Rolled ${dice.reduce((total, n) => total + n)}`);
+  }
+
   function rally() {
     if (Number(sheet.wil) > 0) {
+      const newHp = Math.min(sheet.hp + roll(), sheet.maxHp);
+
       updateSheet({
+        hp: newHp,
         str: sheet.maxStr,
         dex: sheet.maxDex,
         ins: sheet.maxIns,
         wil: sheet.wil - 1,
       });
-      setMessage("Recovered STR, DEX, INS");
+      setMessage(`Recovered Abilities and ${newHp - sheet.hp} HP`);
     } else {
       setMessage("Not enough WIL to Rally");
     }
@@ -207,253 +205,253 @@ function CharacterDisplay() {
     );
   }
 
-  function TopMenu() {
-    return (
-      <>
-        <button
-          onClick={() => goTo("system")}
-          style={{ marginRight: "0.5em" }}
-          disabled={dice}
-        >
-          🛠️ System
-        </button>
-        <button
-          onClick={() => goTo("recovery")}
-          style={{ marginRight: "0.5em" }}
-          disabled={dice}
-        >
-          🔄 Recover
-        </button>
-        <button onClick={() => goTo("dice")} style={{ marginRight: "0.5em" }}>
-          🎲 Dice
-        </button>
-      </>
-    );
+  function CurrentMenu() {
+    switch (tab) {
+      case "system":
+        return <SystemMenu />;
+      case "recover":
+        return <RecoverMenu />;
+      case "level":
+        return <LevelUpMenu />;
+      case "roll":
+        return <RollMenu />;
+      case "pocket":
+        return <PocketMenu />;
+      case "pocket confirm":
+        return <PocketConfirmMenu />;
+      case "action":
+        return <ActionMenu />;
+      case "action confirm":
+        return <ActionConfirmMenu />;
+      default:
+        return <TopMenu />;
+    }
   }
 
-  function TopMenuButton() {
+  function TopMenu() {
     return (
-      <button onClick={() => GoTo("Top")} style={{ marginRight: "0.5em" }}>
-        ⏪ Back
-      </button>
+      <div style={{ marginBottom: "1em" }}>
+        <button
+          style={{ marginRight: "0.5em" }}
+          onClick={() => setTab("system")}
+        >
+          System
+        </button>
+        <button
+          style={{ marginRight: "0.5em" }}
+          onClick={() => setTab("recover")}
+        >
+          Recover
+        </button>
+        <button style={{ marginRight: "0.5em" }} onClick={() => setTab("roll")}>
+          Roll
+        </button>
+      </div>
     );
   }
 
   function SystemMenu() {
     return (
-      <>
-        <TopMenuButton />
-        <button onClick={saveCharacter} style={{ marginRight: "0.5em" }}>
-          💾 Save
+      <div style={{ marginBottom: "1em" }}>
+        <button style={{ marginRight: "0.5em" }} onClick={() => setTab()}>
+          Back
         </button>
-        <button onClick={loadCharacter} style={{ marginRight: "0.5em" }}>
-          📂 Load
+        <button style={{ marginRight: "0.5em" }} onClick={saveCharacter}>
+          Save
         </button>
-        <button onClick={randomizeCharacter} style={{ marginRight: "0.5em" }}>
-          🌀 Randomize
+        <button style={{ marginRight: "0.5em" }} onClick={loadCharacter}>
+          Load
         </button>
-      </>
+        <button style={{ marginRight: "0.5em" }} onClick={randomizeCharacter}>
+          Randomize
+        </button>
+      </div>
     );
   }
 
-  function RecoveryMenu() {
+  function RecoverMenu() {
     return (
-      <>
-        <TopMenuButton />
+      <div style={{ marginBottom: "1em" }}>
+        <button style={{ marginRight: "0.5em" }} onClick={() => setTab()}>
+          Back
+        </button>
+        <button style={{ marginRight: "0.5em" }} onClick={rally}>
+          Rally
+        </button>
+        <button style={{ marginRight: "0.5em" }} onClick={rest}>
+          Rest
+        </button>
         <button
-          onClick={rally}
           style={{ marginRight: "0.5em" }}
-          disabled={sheet.wil <= 0}
+          onClick={() => setTab("level")}
         >
-          🚩 Rally
+          Level Up
         </button>
-        <button onClick={rest} style={{ marginRight: "0.5em" }}>
-          🏕️ Rest
+      </div>
+    );
+  }
+
+  function LevelUpMenu() {
+    return (
+      <div style={{ marginBottom: "1em" }}>
+        <button
+          style={{ marginRight: "0.5em" }}
+          onClick={() => setTab("recover")}
+        >
+          Back
         </button>
         <button
+          style={{ marginRight: "0.5em" }}
           onClick={() => {
             levelUp("str");
           }}
-          style={{ marginRight: "0.5em" }}
         >
-          🆙 Level Up STR
+          Level Strength
         </button>
         <button
+          style={{ marginRight: "0.5em" }}
           onClick={() => {
             levelUp("dex");
           }}
-          style={{ marginRight: "0.5em" }}
         >
-          🆙 Level Up DEX
+          Level Dexterity
         </button>
         <button
+          style={{ marginRight: "0.5em" }}
           onClick={() => {
             levelUp("ins");
           }}
-          style={{ marginRight: "0.5em" }}
         >
-          🆙 Level Up INS
+          Level Insight
         </button>
         <button
+          style={{ marginRight: "0.5em" }}
           onClick={() => {
             levelUp("wil");
           }}
-          style={{ marginRight: "0.5em" }}
         >
-          🆙 Level Up WIL
+          Level Willpower
         </button>
-      </>
+      </div>
     );
   }
 
-  const tabContent = () => {
-    switch (tab) {
-      case "system":
-        return (
-          <>
-            <button onClick={saveCharacter} style={{ marginRight: "0.5em" }}>
-              💾 Save
-            </button>
-            <button onClick={loadCharacter} style={{ marginRight: "0.5em" }}>
-              📂 Load
-            </button>
-            <button
-              onClick={randomizeCharacter}
-              style={{ marginRight: "0.5em" }}
-            >
-              🌀 Randomize
-            </button>
-          </>
-        );
-      case "recovery":
-        return (
-          <>
-            <button
-              onClick={rally}
-              style={{ marginRight: "0.5em" }}
-              disabled={sheet.wil <= 0}
-            >
-              🚩 Rally
-            </button>
-            <button onClick={rest} style={{ marginRight: "0.5em" }}>
-              🏕️ Rest
-            </button>
-            <button
-              onClick={() => {
-                levelUp("str");
-              }}
-              style={{ marginRight: "0.5em" }}
-            >
-              🆙 Level Up STR
-            </button>
-            <button
-              onClick={() => {
-                levelUp("dex");
-              }}
-              style={{ marginRight: "0.5em" }}
-            >
-              🆙 Level Up DEX
-            </button>
-            <button
-              onClick={() => {
-                levelUp("ins");
-              }}
-              style={{ marginRight: "0.5em" }}
-            >
-              🆙 Level Up INS
-            </button>
-            <button
-              onClick={() => {
-                levelUp("wil");
-              }}
-              style={{ marginRight: "0.5em" }}
-            >
-              🆙 Level Up WIL
-            </button>
-          </>
-        );
-      case "rolling":
-        return (
-          <>
-            <button
-              onClick={rolld6}
-              style={{ marginRight: "0.5em" }}
-              disabled={dice}
-            >
-              🎲 Roll d6
-            </button>
-            <button
-              onClick={roll2d6}
-              style={{ marginRight: "0.5em" }}
-              disabled={dice}
-            >
-              🎲🎲 Roll 2d6
-            </button>
-            <button
-              onClick={swapLow}
-              style={{ marginRight: "0.5em" }}
-              disabled={!dice || dice.length != 2}
-            >
-              ↘️ Swap Low
-            </button>
-            <button
-              onClick={swapHigh}
-              style={{ marginRight: "0.5em" }}
-              disabled={!dice || dice.length != 2}
-            >
-              ↗️ Swap High
-            </button>
-            <button
-              onClick={markAbility("str")}
-              style={{ marginRight: "0.5em" }}
-              disabled={!dice || sheet.str <= 0}
-            >
-              🗡️ Mark STR
-            </button>
-            <button
-              onClick={markAbility("dex")}
-              style={{ marginRight: "0.5em" }}
-              disabled={!dice || sheet.dex <= 0}
-            >
-              🏹 Mark DEX
-            </button>
-            <button
-              onClick={markAbility("ins")}
-              style={{ marginRight: "0.5em" }}
-              disabled={!dice || sheet.ins <= 0}
-            >
-              🧠 Mark INS
-            </button>
-            <button
-              onClick={markAbility("wil")}
-              style={{ marginRight: "0.5em" }}
-              disabled={!dice || sheet.wil <= 0}
-            >
-              🔥 Mark WIL
-            </button>
-            <button
-              onClick={() => {
-                setMessage(`${dice.reduce((total, n) => total + n)} rolled`);
-                setDice(null);
-              }}
-              style={{ marginRight: "0.5em" }}
-              disabled={!dice}
-            >
-              ✅ Confirm
-            </button>
-          </>
-        );
-      default:
-        return null;
-    }
-  };
+  function RollMenu() {
+    return (
+      <div style={{ marginBottom: "1em" }}>
+        <button style={{ marginRight: "0.5em" }} onClick={() => setTab()}>
+          Back
+        </button>
+        <button style={{ marginRight: "0.5em" }} onClick={actionRoll}>
+          Action Roll
+        </button>
+        <button
+          style={{ marginRight: "0.5em" }}
+          onClick={() => setTab("pocket")}
+        >
+          Pocket Roll
+        </button>
+        {/* <button style={{ marginRight: "0.5em" }} onClick={() => setTab("test")}>
+          Test Roll
+        </button> */}
+      </div>
+    );
+  }
+
+  function PocketMenu() {
+    return (
+      <div style={{ marginBottom: "1em" }}>
+        <button style={{ marginRight: "0.5em" }} onClick={() => setTab("roll")}>
+          Back
+        </button>
+        <button
+          style={{ marginRight: "0.5em" }}
+          onClick={() => setTab("pocket confirm")}
+        >
+          Roll Pocket
+        </button>
+        <button
+          style={{ marginRight: "0.5em" }}
+          onClick={() => setTab("pocket confirm")}
+        >
+          Pocket Down
+        </button>
+        <button
+          style={{ marginRight: "0.5em" }}
+          onClick={() => setTab("pocket confirm")}
+        >
+          Pocket Up
+        </button>
+      </div>
+    );
+  }
+
+  function PocketConfirmMenu() {
+    return (
+      <div style={{ marginBottom: "1em" }}>
+        <button
+          style={{ marginRight: "0.5em" }}
+          onClick={() => setTab("pocket")}
+        >
+          Mark Dex
+        </button>
+        <button
+          style={{ marginRight: "0.5em" }}
+          onClick={() => setTab("pocket")}
+        >
+          Confirm
+        </button>
+      </div>
+    );
+  }
+
+  function ActionMenu() {
+    return (
+      <div style={{ marginBottom: "1em" }}>
+        <button style={{ marginRight: "0.5em" }} onClick={() => {}}>
+          Swap Low
+        </button>
+        <button style={{ marginRight: "0.5em" }} onClick={() => {}}>
+          Swap High
+        </button>
+        <button
+          style={{ marginRight: "0.5em" }}
+          onClick={() => setTab("action confirm")}
+        >
+          Confirm Pocket
+        </button>
+      </div>
+    );
+  }
+
+  function ActionConfirmMenu() {
+    return (
+      <div style={{ marginBottom: "1em" }}>
+        <button style={{ marginRight: "0.5em" }} onClick={markAbility("str")}>
+          Mark Strength
+        </button>
+        <button style={{ marginRight: "0.5em" }} onClick={markAbility("dex")}>
+          Mark Dexterity
+        </button>
+        <button style={{ marginRight: "0.5em" }} onClick={markAbility("ins")}>
+          Mark Insight
+        </button>
+        <button style={{ marginRight: "0.5em" }} onClick={markAbility("wil")}>
+          Mark Willpower
+        </button>
+        <button style={{ marginRight: "0.5em" }} onClick={confirmActionRoll}>
+          Confirm Roll
+        </button>
+      </div>
+    );
+  }
+
+  // "top" | "system" | "recover" | "level" | "roll" | "pocket" | "pocket confirm" | "action" | "action confirm"
 
   return (
     <div align="left">
-      {/* <div style={{ marginBottom: "1em" }}>
-        {tabButtons}
-        <div style={{ marginBottom: "1em" }}>{tabContent()}</div>
-      </div> */}
+      <div>Debug {tab}</div>
+      <CurrentMenu />
       <h1>{message}</h1>
       <h2>
         <NamedEditableField propertyName="name" />,{" "}

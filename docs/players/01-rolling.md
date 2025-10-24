@@ -16,15 +16,13 @@ The Guide indicates which Abilities to use for a roll.
 - **Strength**: fighting and raw power
 - **Dexterity**: speed and precision
 - **Insight**: depth of knowledge
-- **Willpower**: inner drive
+- **Willpower**: your inner drive
 
 An Ability's value is the number of pips you can mark for that Ability.
 
 ### Advantage and Disadvantage
 
 In Advantage roll an extra die and remove the worst. In Disadvantage roll an extra die and lose the best.
-
-\clearpage
 
 ## Pocket Rolls
 

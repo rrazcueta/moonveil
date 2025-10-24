@@ -20,7 +20,3 @@ Encounters are run in rounds. Start each round with a d6 **Initiative** roll to 
 - **Closing Seekers**: if you have yet to take your turn, take it here
 
 On your turn, take a **Move** and an **Action** in any order alongside other Seekers taking their turns.
-
-## Surprise
-
-Characters that are Surprised do not get to act in the first round.

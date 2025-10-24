@@ -4,16 +4,16 @@
 
 Wager your Ability Points to perform Gambits.
 
-### 1. Damage
+### Damage
 
 Before a melee attack if you have at least 1 pip of Strength.
 
 - On a Strong Hit or better
   - Smash and deal d6\* bonus damage to the original target or
-  - Cleave and deal d6 diminishing damage to each nearby enemy
+  - Cleave and deal d6 damage to each nearby enemy
 - If your attack roll is less than the target Limit, mark all your Strength.
 
-### 2. Control
+### Control
 
 Before a melee attack if you have a Pocket of 4 or more.
 
@@ -27,14 +27,14 @@ Before a melee attack if you have a Pocket of 4 or more.
   - Recover your Move
 - If your attack roll is less than the target Limit, roll Pocket Down.
 
-### 3. Precision
+### Precision
 
 Before a ranged attack if you have at least 1 pip of Dexterity.
 
 - Deal double damage or the target rolls Pocket Down
 - If your attack roll is less than the target Limit, mark all your Dexterity
 
-### 4. Full Defend
+### Full Defend
 
 After being hit if you have at least 1 pip of Dexterity.
 

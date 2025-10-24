@@ -1,6 +1,6 @@
 # Exploration
 
-Speak with your Guide about your intentions. You can attempt anything, and succeed automatically at anything reasonable. For uncertain or risky actions, make a **Dice Check** or enter an **Encounter**.
+Speak with your Guide about your intentions. You can attempt anything, and succeed automatically at anything reasonable or unchallenged. For uncertain or risky actions, you'll have to make a **Dice Check** or even enter an **Encounter**.
 
 ## Intervals
 

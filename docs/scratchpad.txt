@@ -11,9 +11,9 @@ Gitlab/Github CI setup
   
 dungeon scrawl
 
-cat docs/index.md docs/players/*.md docs/players/encounters/*.md \
+cat docs/intro.md docs/players/*.md > build/combined.md
 
-pandoc docs/intro.md docs/players/*.md docs/players/encounters/*.md \
+pandoc docs/intro.md docs/players/*.md \
   -o "Moonveil v1.1.pdf" \
   --pdf-engine=xelatex \
   --toc \

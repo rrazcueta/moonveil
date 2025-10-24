@@ -4,7 +4,7 @@
 
 When you take an Action, choose from one of the following or anything else you could reasonably attempt in a moment.
 
-### 1. Attack
+### Attack
 
 Make an attack to damage an enemy. First confirm the target:
 
@@ -20,17 +20,19 @@ Then roll 2d6 and compare both dice against the target’s **Evade**, **Defense*
 | ≥ Defense  | **Strong Hit**   | Smaller Die Value |
 | ≥ Limit    | **Critical Hit** | Bigger Die Value  |
 
-### 2. Deduction
+### Deduction
 
-Mark 1 Insight, and work with the Guide to reveal useful information into the challenge at hand. Identify a previously unknown Advantage over a challenge or enemy or remove a Disadvantage affecting the team. For example
+Mark 1 Insight and work with the Guide to reveal or create useful information about the challenge at hand. Identify a previously unknown Advantage over a challenge or enemy, or remove a Disadvantage affecting the team.
 
-- Analyze a complex mechanism or situation
-- Reveal an enemy behavior or inclination
-- Locate a weakspot for extra damage
+Examples:
 
-Refund if the result is not useful.
+- Reveal hints or solutions to an encounter, puzzle, or trap
+- Gather a battlefield advantage, a weak structure, or an escape
+- Identify enemy behaviors, inclinations, or weakspots
 
-### 3. Rally
+If you believe the information provides no meaningful benefit, inform the Guide, remove it from the fiction, and refund the cost.
+
+### Rally
 
 Spend an Action and mark 1 Willpower to
 

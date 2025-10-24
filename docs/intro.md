@@ -2,18 +2,26 @@
 title: "Moonveil"
 subtitle: "Version 1.1"
 author: "foodpuzz & lunarsignals"
+documentclass: extarticle
 geometry: [a5paper, margin=0.5in]
-fontsize: "10pt"
+fontsize: 9pt
 mainfont: "Times New Roman"
-output: pdf_document
+output:
+  pdf_document:
+    latex_engine: xelatex
 header-includes:
   - \usepackage{titlesec}
+  - \titleformat{\section}{\normalfont\fontsize{10}{12}\bfseries}{\thesection}{1em}{}
+  - \titleformat{\subsection}{\normalfont\fontsize{9}{11}\bfseries}{\thesubsection}{1em}{}
+  - \renewcommand\normalsize{\fontsize{9}{11}\selectfont}
   - \newcommand{\sectionbreak}{\clearpage}
 ---
 
 \clearpage
 
-> Cool text about the Moonveil. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et ligula hendrerit, maximus erat at, vestibulum nisi. Ut aliquet, nulla at scelerisque venenatis, mi est vehicula ipsum, eu vulputate nunc felis ac arcu. Mauris convallis vitae elit nec efficitur. Donec non tempor urna. Sed sit amet elit id eros elementum fringilla congue eu odio. In posuere, dolor a venenatis consectetur, lorem metus tempus diam, eget maximus quam lectus nec velit. Nunc sit amet erat mi. Donec id bibendum ante.
+> THE MOON IS FALLING TO EARTH, AND IT’S MAKING THINGS WEIRD. MOON SHARDS ARE BLANKETING AREAS WITH STRANGE MAGIC—THE MOONVEIL. SOME OF IT IS HARMLESS, AND SOME OF IT IS ACTUALLY PRETTY COOL, BUT SOME OF IT IS BAD, AND YOU’VE GOTTA DO SOMETHING ABOUT IT.
+
+> YOU’RE IN A CARAVAN OF SEEKERS INVESTIGATING THE MOONVEIL. YOUR VEIL GUIDE WILL TAKE YOU WHERE YOU NEED TO GO.
 
 ## What You Need
 
@@ -23,11 +31,14 @@ header-includes:
 
 ## Who is this for?
 
-Something about the core design.
+MOONVEIL is a tabletop dungeon crawler where you explore the ruins of the broken moon, face all kinds of danger, and use your Pocket dice to twist luck in your favor.
 
-- Inspired by
-  - OSR
-  - MtG
-  - Dungeon Meshi
-- Combat Focused
+What makes MOONVEIL stand out:
+
+- 2d6, classless, combat focus, gamified dungeon crawling resource management
 - Pocket Push Rolls
+- Inspired by
+  - Dungeon Meshi, Wizardry
+  - ICRPG, Shadowdark, FIST, Mörk Borg, 2400, FIST
+  - Magic the Gathering
+- Combat Focused

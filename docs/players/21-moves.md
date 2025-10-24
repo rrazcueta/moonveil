@@ -1,5 +1,3 @@
-\clearpage
-
 ## Movement
 
 Moves change your location, your relative position, or help you regain your footing.
@@ -17,7 +15,7 @@ When you take a Move, choose from one of the following or anything else you coul
 
 If you need to navigate carefully—such as crawling over allies in a cramped space, avoiding a trap, or crossing a slick surface—roll **Pocket Down**.
 
-If you want to move behind an enemy, **Sneak** with DC10 Dexterity to go unnoticed and move behind an enemy:
+If you want to move behind an enemy, **Sneak** with DC10 Dexterity to go Unnoticed and move behind an enemy:
 
 - Roll with Advantage if the enemy is engaged with someone or something else.
 - Roll with Disadvantage if multiple enemies block the way or the space is narrow.

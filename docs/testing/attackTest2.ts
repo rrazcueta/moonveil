@@ -48,7 +48,7 @@ function weaponSmith({
 const basicWeapon = weaponSmith();
 
 function characterGen({
-  evade = 5,
+  evade = 4,
   pocket = roll(),
   limit = 10,
   weapon = basicWeapon,
@@ -220,7 +220,7 @@ function getAverage(weapon: weapon, defend = false) {
   for (let i = 0; i < trials; i++) {
     const { damage, pocket } = rollAttack({
       attacker: characterGen({ weapon, pocket: roll() }),
-      defender: characterGen({ evade: 5, pocket: 5, limit: 10 }),
+      defender: characterGen({ evade: 4, pocket: roll(), limit: 11 }),
       defend,
     });
     totalDamage += damage;
