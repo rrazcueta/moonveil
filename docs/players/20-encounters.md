@@ -6,8 +6,16 @@ The Guide sets the scene in terms of what the other
 
 - Describe the dungeon in terms of zones of action
 - Outside of the narrative description of the current area
+
   - Describe the area in terms of zones, distances, and movement
   - Describe obvious interactive elements
+
+### Surprise
+
+If one side is **Surprised** at the start of an Encounter:
+
+- The other side takes **free turns**
+- Then roll **initiative** and continue the encounter normally
 
 ## Initiative
 

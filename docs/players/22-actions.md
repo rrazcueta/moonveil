@@ -11,18 +11,19 @@ Make an attack to damage an enemy. First confirm the target:
 - Melee: a nearby enemy, 0 Moves away. The opposing side chooses which enemy
 - Ranged: an enemy of your choice up to the weapon's Range away.
 
-Then roll 2d6 and compare both dice against the target’s **Evade**, **Defense**, and **Limit** to determine if and how hard the attack hits.
+Then roll 2d6 and compare both dice against the target’s **Defense** and **Limit** to determine if and how hard the attack hits.
 
-| Thresholds | Tier             | Damage            |
-| ---------- | ---------------- | ----------------- |
-| ≤ Evade    | **Miss**         | 0                 |
-| < Defense  | **Weak Hit**     | 1                 |
-| ≥ Defense  | **Strong Hit**   | Smaller Die Value |
-| ≥ Limit    | **Critical Hit** | Bigger Die Value  |
+| Thresholds | Tier             | Damage            | Strong | Critical |
+| ---------- | ---------------- | ----------------- | :----: | :------: |
+| < Defense  | **Weak Hit**     | Smaller Die Value |        |          |
+| ≥ Defense  | **Strong Hit**   | Bigger Die Value  |   X    |          |
+| ≥ Limit    | **Critical Hit** | Bigger Die Value  |   X    |    X     |
+
+Consult your weapon to see your Strong and Critical damage.
 
 ### Deduction
 
-Mark 1 Insight and work with the Guide to reveal or create useful information about the challenge at hand. Identify a previously unknown Advantage over a challenge or enemy, or remove a Disadvantage affecting the team.
+Mark 1 Insight and work with the Guide to reveal or create useful information about the challenge at hand. Identify a previously unknown Advantage over a challenge or enemy, or remove a Disadvantage affecting the Team.
 
 Examples:
 

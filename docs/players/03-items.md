@@ -30,12 +30,12 @@ You can carry 6 + Willpower items without penalty. For each item beyond that, yo
 
 ## The Armory
 
-| Equipment   | Cost | Description                                                   |
-| ----------- | ---: | ------------------------------------------------------------- |
-| Shield      |    4 | When your Pocket is Odd, Evade +1                             |
-| Greatshield |    8 | 2 Slots, Evade +1, but when Pocket is under 4, you can't Move |
-| Helmet      |    2 | Limit +1                                                      |
-| Cloak       |    6 | Can roll Pocket on Moving                                     |
+| Equipment   | Cost | Description                                                     |
+| ----------- | ---: | --------------------------------------------------------------- |
+| Shield      |    4 | When your Pocket is Odd, Defense +1                             |
+| Greatshield |    8 | 2 Slots, Defense +1, but when Pocket is under 4, you can't Move |
+| Helmet      |    2 | Limit +1                                                        |
+| Cloak       |    6 | Can roll Pocket on Moving                                       |
 
 | Armor  | Cost | Slots | Description                                                          |
 | ------ | ---: | :---: | -------------------------------------------------------------------- |
@@ -89,17 +89,3 @@ You can carry 6 + Willpower items without penalty. For each item beyond that, yo
 |                 |      |       |       | Spend Action to Reload.          |
 | Quiver or Cache |    1 |       |       | Can be found in Dungeon Gear     |
 |                 |      |       |       | Empties out when rolling under 3 |
-
-<!-- Equipment modifiers:
-
-- Evasive X, Evade +X
-- Protected X, Limit +X
-- Resist, Damage Reduction -X
-- Slippery, Can Roll Pocket When Moving
-- Edged, Minimum X
-- Piercing, Strong +X
-- Heavy, Critical +X
-- Parrying, when dodging counter attack at disadvantage
-- Easy, +1 to Attack Rolls
-- Sentimental -> A Skill or Gift
-- Cover, Evade +1 -->

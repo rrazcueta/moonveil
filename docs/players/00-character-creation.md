@@ -4,34 +4,37 @@ You are a Seeker exploring the Moonveil looking for fallen Pieces of the Moon.
 
 ## Level, Abilities, and Hit Points
 
-Assign **[2, 2, 1, 1]** to Strength, Dexterity, Insight, and Willpower in any order, or roll **d6** for a spread:
+Assign **[3, 2, 1, 1]** to STR, DEX, INS, and WIL in any order, or roll d6 for a spread:
 
-| d6  | Strength | Dexterity | Insight | Willpower |
-| --- | :------: | :-------: | :-----: | :-------: |
-| 1   |    2     |     2     |    1    |     1     |
-| 2   |    2     |     1     |    2    |     1     |
-| 3   |    2     |     1     |    1    |     2     |
-| 4   |    1     |     2     |    2    |     1     |
-| 5   |    1     |     2     |    1    |     2     |
-| 6   |    1     |     1     |    2    |     2     |
+| d6      |     | Strength | Dexterity | Insight | Willpower |
+| ------- | :-: | :------: | :-------: | :-----: | --------- |
+| Rogue   |  1  |    2     |     2     |    1    | 1         |
+| Drifter |  2  |    2     |     1     |    2    | 1         |
+| Warrior |  3  |    2     |     1     |    1    | 2         |
+| Wizard  |  4  |    1     |     2     |    2    | 1         |
+| Ranger  |  5  |    1     |     2     |    1    | 2         |
+| Witch   |  6  |    1     |     1     |    2    | 2         |
 
-**Hit Points**: Your distance from Death. Roll a single **d6, add (3 x Strength)**.
+Your **Hit Points (HP)** show how close you are to Death. Roll **d6 and add (3 × STR)** to determine your starting HP.
 
-**Pocket**: Your luck and momentum. Roll d6 and **keep that die to track it**.
+Your **Pocket** represents luck and momentum. Roll **d6** and **keep that die** — you’ll use this die to track your luck throughout the game.
 
-**Evade**: Any attack roll equal to or under your Evade is a Miss. **Start at 5**.
+Attacks under your **Defense** are Weak. Attacks above it are Strong.
 
-**Limit**: Any attack roll equal to or over your Limit is a Critical Hit. **Start at 10**.
+- **Defense = 4 + Pocket**
+- Defense **cannot reach or exceed your Limit**. If it would, lower it to **one less**.
 
-**Hit Track**: Shows the attack tiers against you. Draw a vertical line just right of your Evade and another just left of your Limit.
+Your **Hit Track** shows how attacks affect you:
 
-**Defense**: Add Evade and Pocket. Defense can never reach your Limit—if the total would meet or pass it, lower it to one less than your Limit. **Place your Pocket die on your Hit Track at your Defense**.
+- Put your **Pocket die on your Hit Track at your Defense value**
+- Any attack that hits **your Limit or higher is a Critical Hit**
+- Start with **Limit = 10**; draw a vertical line between 9 and 10 on your Hit Track for reference
 
 Start at **Level** 1 and fill in your **Name** and **Portrait**.
 
 \clearpage
 
-## Equipment, Magic, and a Gift
+## Starting Equipment and Magic
 
 Start with d6 **Coin** and 3 **Dungeon Gear**. Then choose or roll d66 twice for starting gifts.
 

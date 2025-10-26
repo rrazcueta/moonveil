@@ -35,7 +35,3 @@ Your Pocket fluctuates with your fate. You can mark Dexterity to reroll any Pock
 ## Exploding Rolls
 
 Rolls denoted by an asterisk are exploding rolls. Reroll these rolls on 6, adding all the dice rolled this way.
-
-## Diminishing Rolls
-
-Each successive die can be at most the one less than the previous die. E.g. rolling 6, 3, 5 results in 6 + 3 + 2 (diminshed).

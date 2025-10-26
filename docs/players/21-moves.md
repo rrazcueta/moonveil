@@ -1,3 +1,5 @@
+\clearpage
+
 ## Movement
 
 Moves change your location, your relative position, or help you regain your footing.

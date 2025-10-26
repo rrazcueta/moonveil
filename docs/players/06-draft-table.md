@@ -26,9 +26,9 @@ Then roll d66 for a Skill from each of the two tables.
 |     | 4   | Steady - Spend STR, reroll Ranged Attack                       |
 |     | 5   | Flank - DC10 STR, move behind an enemy                         |
 |     | 6   | Crush - Target rolls Pocket Down on melee attack rolls of 12   |
-| 4-6 | 1   | Guard - When your Pocket is 6, nearby allies gain Evade +1     |
+| 4-6 | 1   | Guard - When your Pocket is 6, nearby allies gain Defense +1   |
 |     | 2   | Reach - When your Pocket is 6, can target melee attacks        |
-|     | 3   | Brace - Evade +1 when your Pocket is 6                         |
+|     | 3   | Brace - When your Pocket is 6, Damage Reduction -1             |
 |     | 4   | Big Damage - When Damage Gambit, deal +3 damage to the target  |
 |     | 5   | Big Cleave - When Damage Gambit, deal +1 to the nearby enemies |
 |     | 6   | Fighter - When rolling STR, the first roll is at Advantage     |
@@ -57,7 +57,7 @@ Then roll d66 for a Skill from each of the two tables.
 | d6  | d6  | Insight Skills on 2, 4, 6                                         |
 | --- | --- | ----------------------------------------------------------------- |
 | 1-3 | 1   | Spellcraft - Learn a Spell or One spell you know is DC -1         |
-|     | 2   | Premonition - When Surprised, DC10 INS to have been prepared      |
+|     | 2   | Premonition - When Surprised, DC10 INS to cancel it               |
 |     | 3   | Farsight - Spend Action, INS - roll Advantage d6 times            |
 |     | 4   | Trivial - DC10 INS to Deduce without marking                      |
 |     | 5   | Dark Pact - Take d6 damage to reroll INS                          |

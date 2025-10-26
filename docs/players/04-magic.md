@@ -33,7 +33,7 @@ Guilt cannot be discarded. Guilt is removed only by genuine sacrifice, as decide
 | Moonsmell    | 8   | Heightened senses.                                    |
 | Egress       | 9   | You and nearby allies escape to safety.               |
 | Invisibility | 9   | You or something you touch is Unnoticed for d6 rounds |
-| Magic Shield | 9   | Evade +1, Damage Reduction -1 to self                 |
+| Magic Shield | 9   | Defense +1, Damage Reduction -1 to self               |
 | Magic Orb    | 10  | 2d6 area damage.                                      |
 | Sleepsand    | 12  | Sleep                                                 |
 
@@ -48,13 +48,13 @@ Guilt cannot be discarded. Guilt is removed only by genuine sacrifice, as decide
 
 ## Willpower Miracle List
 
-| Name            | DC  | Description                             |
-| --------------- | --- | --------------------------------------- |
-| Dawn Arm        | 10  | Touch a Weapon. +d6 damage until a miss |
-| Holy Protection | 10  | All near allies Evade +1 for d6 rounds  |
-| Healing Circle  | 10  | Heal +d6 to area                        |
-| Resurrection    | 10  | Needs relative safety.                  |
-|                 |     | Must occur shortly after death. 1 HP.   |
+| Name            | DC  | Description                              |
+| --------------- | --- | ---------------------------------------- |
+| Dawn Arm        | 10  | Touch a Weapon. +d6 damage until a miss  |
+| Holy Protection | 10  | All near allies Defense +1 for d6 rounds |
+| Healing Circle  | 10  | Heal +d6 to area                         |
+| Resurrection    | 10  | Needs relative safety.                   |
+|                 |     | Must occur shortly after death. 1 HP.    |
 
 <!-- | Miracle Fist   | 9   | Fist Attack Rolls at Advantage. +1 Damage |
 | Shapeshift     | 8   | Into an animal for a short time           | -->
