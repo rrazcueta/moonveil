@@ -1,4 +1,4 @@
-# Drafting Skills
+# Drafting
 
 When Drafting you are presented with two random Skills and select one to keep.
 

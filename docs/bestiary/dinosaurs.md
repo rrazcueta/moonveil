@@ -6,8 +6,8 @@ Big Hit Points, Big Damage, Low Chance To Hit
 
 3 Pack
 
-- Hit Points: d6/2
-- Evade: 6
+- Hit Points: 3
+- Base: 5
 - Limit: 10
 - Attacks
   - Minimum Damage 2
@@ -17,8 +17,8 @@ Big Hit Points, Big Damage, Low Chance To Hit
 
 2 Pack
 
-- Hit Points: 4 +d6
-- Evade: 6
+- Hit Points: 7
+- Base: 5
 - Limit: 10
 - Attacks
   - Minimum Damage 3
@@ -26,19 +26,19 @@ Big Hit Points, Big Damage, Low Chance To Hit
 
 ## Herd Lizard
 
-- Hit Points: 20 +d6
+- Hit Points: 24
 - Evade: 3
 - Limit: 11
 - Movement
-  - Stomp! Movement is an Attack at Disadvantage
+  - Stomp! Movement is an Attack to an area at Disadvantage
 - Attack
-  - Swipe! Attack 2 Different Targets Strong Hit +d6
+  - Swipe! Attack 2 Different Targets
 
 ## Flying Lizard
 
-- Hit Points: 15 + d6
-- Evade: 6
-- Limit: 10
+- Hit Points: 16
+- Base: 6
+- Limit: 9
 
 - Movement
   - At Pocket 1 it's Grounded.
@@ -51,14 +51,12 @@ Hint: Probably need something like Ranged or a Net
 
 ## Long Neck Lizard
 
-- Hit Points: 40 +6d6
-- Evade: 3
+- Hit Points: 60
+- Base: 3
 - Limit: 11
 
 - Movement
   - Charge! Movement is an Attack at Disadvantage
 - Attack
-  - Swipe! Attack 2 Different Targets
-  - Attacks an entire area
-  - Any Hit Moves Target 1, d6 damage
-  - Critical Hit +2d6 more damage
+  - Swipe! Attacks an entire area, Any Hit Moves Target 1, +d6 damage
+  - Angry Lizard! +2d6 bonus damage on critical

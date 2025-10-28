@@ -16,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "export:pdf": "cat docs/players/*.md > ./docs/all.md && pandoc docs/players/*.md -o \"./docs/Moonveil v1.1.pdf\" --pdf-engine=xelatex --toc --toc-depth=1"
   },
   "eslintConfig": {
     "extends": [

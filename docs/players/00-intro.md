@@ -31,14 +31,22 @@ header-includes:
 
 ## Who is this for?
 
-MOONVEIL is a tabletop dungeon crawler where you explore the ruins of the broken moon, face all kinds of danger, and use your Pocket dice to twist luck in your favor.
+MOONVEIL is a tabletop dungeon crawler for risk takers.
 
-What makes MOONVEIL stand out:
+Some unique aspects
 
-- 2d6, classless, combat focus, gamified dungeon crawling resource management
-- Pocket Push Rolls
-- Inspired by
-  - Dungeon Meshi, Wizardry
-  - ICRPG, Shadowdark, FIST, Mörk Borg, 2400, FIST
-  - Magic the Gathering
-- Combat Focused
+- Dice manipulation
+- Ability endurance
+- Skill drafting
+
+Other design philosophies
+
+- 2d6
+- Classless, deadly
+- Collaborative narrative
+
+Inspired by
+
+- ICRPG, Shadowdark, FIST, Mörk Borg, 2400, Dungeon World, Cairn, DURF
+- Dungeon Meshi, Wizardry, Tactics Ogre
+- Magic the Gathering

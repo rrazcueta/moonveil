@@ -4,7 +4,7 @@
 
 As human, but...
 
-- Evade: 6
+- Base: 5
 - Limit: 9
 
 ## Slime

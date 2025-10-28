@@ -8,18 +8,19 @@ When you take an Action, choose from one of the following or anything else you c
 
 Make an attack to damage an enemy. First confirm the target:
 
-- Melee: a nearby enemy, 0 Moves away. The opposing side chooses which enemy
-- Ranged: an enemy of your choice up to the weapon's Range away.
+- Melee: a nearby enemy, 0 Moves away. **The opposing side chooses which enemy**.
+- Ranged: **an enemy of your choice** up to the weapon's Range away.
 
 Then roll 2d6 and compare both dice against the target’s **Defense** and **Limit** to determine if and how hard the attack hits.
 
 | Thresholds | Tier             | Damage            | Strong | Critical |
 | ---------- | ---------------- | ----------------- | :----: | :------: |
-| < Defense  | **Weak Hit**     | Smaller Die Value |        |          |
-| ≥ Defense  | **Strong Hit**   | Bigger Die Value  |   X    |          |
+| ≤ Evade    | **Miss**         | None              |        |          |
+| < Defense  | **Weak Hit**     | 1                 |        |          |
+| ≥ Defense  | **Strong Hit**   | Smaller Die Value |   X    |          |
 | ≥ Limit    | **Critical Hit** | Bigger Die Value  |   X    |    X     |
 
-Consult your weapon to see your Strong and Critical damage.
+Weapons may get special effects on Strong or Critical Hits.
 
 ### Deduction
 
