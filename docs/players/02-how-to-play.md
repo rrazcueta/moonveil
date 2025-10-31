@@ -1,8 +1,8 @@
 # How To Play
 
-As you explore, **talk with your Guide** about your intentions. You can attempt anything, and you automatically succeed at **reasonable or unchallenged actions**. When te outcome is risky, uncertain, or perilous, you must make a **Dice Check** or enter an **Encounter**.
+As you explore, **talk with your Guide** about your intentions. You can attempt anything, and you automatically succeed at **reasonable or unchallenged actions**. When the outcome is risky, uncertain, or perilous, you must make a **Dice Check** or enter an **Encounter**.
 
-## Rolling and the Pocket Push
+## Dice Checks and the Pocket Push
 
 The fiction and the mechanics move together. Your **Pocket** is your character’s luck, confidence, their strange pull on the world’s luck — and at the table, it lets you swap a die from one roll to the next. Your **Abilities** are their spirit and endurance — and mechanically, you spend them to push through bad rolls when your luck has run.
 
@@ -11,20 +11,9 @@ When you take a significant risk the Guide sets the **Dice Check** (**DC**) and 
 1. **Pocket**: Replace one of the dice with your Pocket
 2. **Push**: Mark a pip in a relevant Ability to reroll
 
-### Abilities and Pips
-
-The Guide indicates which Abilities to use for a roll.
-
-- **Strength**: fighting and raw power
-- **Dexterity**: speed and precision
-- **Insight**: depth of knowledge
-- **Willpower**: your inner drive
-
-An Ability's value is the number of pips you can mark for that Ability.
-
 ### Advantage and Disadvantage
 
-In Advantage roll an extra die and remove the worst. In Disadvantage roll an extra die and lose the best.
+In Advantage roll an extra die, remove the worst. In Disadvantage roll an extra die, lose the best.
 
 ## Other rolls
 

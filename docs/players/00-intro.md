@@ -31,7 +31,7 @@ header-includes:
 
 ## Who is this for?
 
-MOONVEIL is a tabletop dungeon crawler for risk takers.
+MOONVEIL is a tabletop RPG dungeon crawler. It's for people that like swords and magic and board games. Most of the game is out in the open, but it's important when it's not. Dice are neutral territory.
 
 Some unique aspects
 

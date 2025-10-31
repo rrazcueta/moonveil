@@ -4,6 +4,13 @@ You are a Seeker exploring the Moonveil looking for fallen Pieces of the Moon.
 
 ## Abilities, Hit Points, Pocket
 
+You have four Abilities:
+
+- **Strength**: fighting and raw power
+- **Dexterity**: speed and precision
+- **Insight**: depth of knowledge
+- **Willpower**: your inner drive
+
 Assign **[3, 2, 1, 1]** to STR, DEX, INS, and WIL in any order, or roll d6 for a spread:
 
 | d6  | Strength | Dexterity | Insight | Willpower |

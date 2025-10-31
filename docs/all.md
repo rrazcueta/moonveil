@@ -31,7 +31,7 @@ header-includes:
 
 ## Who is this for?
 
-MOONVEIL is a tabletop dungeon crawler for risk takers.
+MOONVEIL is a tabletop RPG dungeon crawler. It's for people that like swords and magic and board games. Most of the game is out in the open, but it's important when it's not. Dice are neutral territory.
 
 Some unique aspects
 
@@ -55,6 +55,13 @@ Inspired by
 You are a Seeker exploring the Moonveil looking for fallen Pieces of the Moon.
 
 ## Abilities, Hit Points, Pocket
+
+You have four Abilities:
+
+- **Strength**: fighting and raw power
+- **Dexterity**: speed and precision
+- **Insight**: depth of knowledge
+- **Willpower**: your inner drive
 
 Assign **[3, 2, 1, 1]** to STR, DEX, INS, and WIL in any order, or roll d6 for a spread:
 
@@ -154,20 +161,9 @@ When you take a significant risk the Guide sets the **Dice Check** (**DC**) and 
 1. **Pocket**: Replace one of the dice with your Pocket
 2. **Push**: Mark a pip in a relevant Ability to reroll
 
-### Abilities and Pips
-
-The Guide indicates which Abilities to use for a roll.
-
-- **Strength**: fighting and raw power
-- **Dexterity**: speed and precision
-- **Insight**: depth of knowledge
-- **Willpower**: your inner drive
-
-An Ability's value is the number of pips you can mark for that Ability.
-
 ### Advantage and Disadvantage
 
-In Advantage roll an extra die and remove the worst. In Disadvantage roll an extra die and lose the best.
+In Advantage roll an extra die, remove the worst. In Disadvantage roll an extra die, lose the best.
 
 ## Other rolls
 
@@ -341,7 +337,7 @@ Make an attack to damage an enemy. First confirm the target:
 - Melee: a nearby enemy, 0 Moves away. **The opposing side chooses which enemy**.
 - Ranged: **an enemy of your choice** up to the weapon's Range away.
 
-Then roll 2d6 and compare both dice against the target’s **Defense** and **Limit** to determine if and how hard the attack hits.
+Then roll 2d6 and compare both dice against the target’s **Evade**, **Defense**, and **Limit** to determine the attack tier.
 
 | Thresholds | Tier             | Damage            | Strong | Critical |
 | ---------- | ---------------- | ----------------- | :----: | :------: |
@@ -349,8 +345,6 @@ Then roll 2d6 and compare both dice against the target’s **Defense** and **Lim
 | < Defense  | **Weak Hit**     | 1                 |        |          |
 | ≥ Defense  | **Strong Hit**   | Smaller Die Value |   X    |          |
 | ≥ Limit    | **Critical Hit** | Bigger Die Value  |   X    |    X     |
-
-Weapons may get special effects on Strong or Critical Hits.
 
 ### Deduction
 
@@ -428,91 +422,84 @@ After being hit if you have at least 1 pip of Dexterity.
 | Medium |    5 |   2   | Damage Reduction -1                                                  |
 | Heavy  |  >50 |   3   | Damage Reduction -2, but when your Pocket is under 4, you can't Move |
 
-| Melee                 | Cost | Description                                    |
-| --------------------- | ---: | ---------------------------------------------- |
-| Club, Knife, or Staff |    1 | Can be found in Dungeon Gear                   |
-| Bomb                  |    2 | Range 1. 1 Round to detonate. d6 area damage.  |
-| A Huge Bomb!          |  >25 | Range 1. 1 Round to detonate. 6d6 area damage. |
-| Dagger                |    2 | Roll Advantage When Unnoticed                  |
-| Whip                  |    3 | Target rolls Pocket Down on any hit            |
-| Spear                 |    4 | Strong Damage +2                               |
-| Hammer                |    4 | Critical Damage +d6\*                          |
-| Axe                   |    4 | Minimum Damage 2                               |
-|                       |      | Critical Damage +2                             |
-| Sword                 |    5 | Minimum Damage 3                               |
-| Fencing Sword         |    5 | Minimum Damage 2                               |
-|                       |      | When Evading melee, Attacker loses their Move  |
+| Melee                 | Cost | Description                   |
+| --------------------- | ---: | ----------------------------- |
+| Club, Knife, or Staff |    1 | Can be found as Dungeon Gear  |
+| Dagger                |    2 | Roll Advantage When Unnoticed |
+| Spear                 |    4 | Strong Damage +2              |
+| Hammer                |    5 | Critical Damage +d6\*         |
+| Axe                   |    5 | Minimum Damage 2              |
+|                       |      | Critical Damage +2            |
+| Sword                 |    6 | Minimum Damage 3              |
 
-| 2H Melee     | Cost | Slots | Description            |
-| ------------ | ---: | :---: | ---------------------- |
-| Quarterstaff |    2 |   1   | Critical +2            |
-| Great Club   |    8 |   2   | Critical Damage +2d6\* |
-| Pike         |    9 |   2   | Strong Damage +6       |
-| Horse Sword  |   10 |   2   | Minimum Damage 3       |
-|              |      |       | Critical Damage +d6\*  |
-| Halberd      |   10 |   2   | Strong Damage +2       |
-|              |      |       | Critical Damage +d6\*  |
-| Zweihander   |    9 |   2   | Minimum Damage 3       |
-|              |      |       | Strong Damage +2       |
+| 2H Melee   | Cost | Slots | Description            |
+| ---------- | ---: | :---: | ---------------------- |
+| Great Club |    8 |   2   | Critical Damage +2d6\* |
+| Pike       |    9 |   2   | Strong Damage +6       |
+| Great Axe  |   10 |   2   | Minimum Damage 3       |
+|            |      |       | Critical Damage +d6\*  |
+| Halberd    |   10 |   2   | Strong Damage +2       |
+|            |      |       | Critical Damage +d6\*  |
+| Zweihander |    9 |   2   | Minimum Damage 3       |
+|            |      |       | Strong Damage +2       |
 
-| Ranged          | Cost | Range | Slots | Description                      |
-| --------------- | ---: | :---: | :---: | -------------------------------- |
-| Throwing Knife  |    2 |   1   |  4:1  | Melee Minimum Damage 2           |
-| Javelin         |    2 |   1   |  2:1  | Melee Strong Damage +1           |
-| Throwing Axe    |    3 |   1   |   1   | Melee Critical Damage +d6/2      |
-| Bow             |    2 |   2   |   1   |                                  |
+| Ranged   | Cost | Range | Description                         |
+| -------- | ---: | :---: | ----------------------------------- |
+| Whip     |    3 |   0   | Target rolls Pocket Down on any hit |
+| Bow      |    2 |   2   |                                     |
+| Crossbow |    8 |   1   | Strong Damage +2                    |
+|          |      |       | Spend Move to Reload.               |
+
+| Special      | Cost | Description                                    |
+| ------------ | ---- | ---------------------------------------------- |
+| Bomb         | 2    | Range 1. 1 Round to detonate. d6 area damage.  |
+| A Huge Bomb! | >25  | Range 1. 1 Round to detonate. 6d6 area damage. |
+
+<!-- | Quiver or Cache |    1 |       |       | Can be found in Dungeon Gear     |
+|                 |      |       |       | Empties out when rolling under 3 |
+| Heavy Crossbow  |   10 |   2   |   1   | Strong Damage +3                 |
+|                 |      |       |       | Spend Action to Reload.          |
 | Longbow         |    3 |   3   |   1   | Critical Damage +d6\*            |
 |                 |      |       |       | Roll Disadvantage against Near.  |
 |                 |      |       |       | Spend Action and Move to shoot.  |
-| Crossbow        |    6 |   2   |   1   | Strong Damage +2                 |
-|                 |      |       |       | Spend Move to Reload.            |
-| Heavy Crossbow  |   10 |   2   |   1   | Strong Damage +3                 |
-|                 |      |       |       | Spend Action to Reload.          |
-| Quiver or Cache |    1 |       |       | Can be found in Dungeon Gear     |
-|                 |      |       |       | Empties out when rolling under 3 |
+| Throwing Knife  |    2 |   1   |  4:1  | Melee Minimum Damage 2           |
+| Javelin         |    2 |   1   |  2:1  | Melee Strong Damage +1           |
+| Throwing Axe    |    3 |   1   |   1   | Melee Critical Damage +d6/2      | -->
 # The Archive
 
 ## Insight Spell List
 
 ### Air Pressure, DC8
 
-Make the air thick like water.  
-_The world feels heavier, and every breath resists you._
+Make the air thick like water.
 
 ### Egress, DC9
 
-You and nearby allies escape to safety.  
-_The air ripples, opening a path just for you._
+You and nearby allies escape to safety.
 
 ### Heavylight, DC8
 
-Conjure a glowing boulder in your hands.  
-_Its warm glow pulses with quiet weight._
+Conjure a glowing boulder in your hands.
 
 ### Invisibility, DC9
 
-You or something you touch is Unnoticed for d6 rounds.  
-_Shadows cling to you like a second skin._
+You or something you touch is Unnoticed for d6 rounds.
 
 ### Magic Orb, DC10
 
-2d6 area damage.  
-_Energy coils and bursts, singing through the air._
+2d6 area damage.
 
 ### Magic Shield, DC9
 
-Defense +1, Damage Reduction -1 to self.  
-_A faint shimmer bends the world around you._
+Defense +1, Damage Reduction -1 to self.
 
 ### Moonsmell, DC8
 
-Heightened senses.  
-_The scent of magic lingers, sharp and sweet._
+Heightened senses.
 
 ### Sleepsand, DC12
 
-Sleep.  
-_A soft dust drifts down, lulling even the fiercest foe._
+Sleep.
 
 <!-- | Eye Spy      | 8   | Conjure a shortlived sprite. See what it sees. |
 | Ice Column   | 8   | Conjure a slippery ice structure. Range 1.     |
@@ -529,23 +516,19 @@ _A soft dust drifts down, lulling even the fiercest foe._
 
 ### Dawn Arm, DC10
 
-Touch a weapon. +d6 damage until a miss.  
-_The weapon hums with righteous fire in your hand._
+Touch a weapon. +d6 damage until a miss.
 
 ### Healing Circle, DC10
 
-Heal +d6 to area.  
-_Light blooms softly, knitting flesh and spirit._
+Heal +d6 to area.
 
 ### Holy Protection, DC10
 
-All nearby allies gain Defense +1 for d6 rounds.  
-_A radiant aura shields those you cherish._
+All nearby allies gain Defense +1 for d6 rounds.
 
 ### Resurrection, DC10
 
-Bring a fallen ally back to life (requires relative safety).  
-_Life flickers like a candle, then steadies once more at 1 HP._
+Bring a fallen ally back to life (requires relative safety).
 
 <!-- | Miracle Fist   | 9   | Fist Attack Rolls at Advantage. +1 Damage |
 | Shapeshift     | 8   | Into an animal for a short time           | -->
