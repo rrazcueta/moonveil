@@ -1,6 +1,6 @@
-# Items
+<!-- # Items
 
-Exploring the Moonveil means hauling gear — and sometimes hauling friends. Track everything you carry in **Equipment & Backpack**.
+Exploring the Moonveil means hauling gear — and sometimes hauling friends. Track everything you carry in **Equipment**.
 
 - **Slots**: Most items take up 1 slot
   - Larger items take up 2 or more slots
@@ -20,8 +20,8 @@ If you think you might need something in particular, ask the Guide if they would
 
 ## Encumberance
 
-You can carry 6 + Willpower items without penalty. For each item beyond that, you gain **Encumbrance**. Subtract your Encumbrance from every roll before resolving it.
+You can carry **Willpower + 6** items without penalty. For each item beyond that, you gain **Encumbrance**. Subtract your Encumbrance from every roll before resolving it.
 
 ## Carrying Your Friends
 
-Carrying a Seeker, without their gear, takes 5 slots. You need to accomodate slots for your own gear and any gear of theirs as well.
+Carrying a Seeker, without their gear, takes 5 slots. You need to accomodate slots for your own gear and any gear of theirs as well. -->

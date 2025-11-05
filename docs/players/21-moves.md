@@ -8,14 +8,19 @@ Moves change your location, your relative position, or help you regain your foot
 
 When you take a Move, choose from one of the following or anything else you could easily attempt in a moment:
 
-- Travel - Spend 1 Move to travel to an adjacent area.
-- Reposition - Spend 1 Move to reposition yourself relative to other things in the same area.
-- Footing - Spend 1 Move to roll Pocket.
-- Quick - Spend an Action to gain an additional Move.
+- Travel - Spend Move to travel to an adjacent area.
+- Reposition - Spend Move to reposition yourself relative to other things in the same area.
+- Footing - Spend Move to roll Pocket.
+- Quick - Spend Action to regain your Move.
 
 ### Obstacles
 
-If you need to navigate carefully—such as crawling over allies in a cramped space, avoiding a trap, or crossing a slick surface—roll **Pocket Down**.
+If you need to navigate carefully your Guide will require you to **Pocket Down**. Examples:
+
+- Traversal uphill or up stairs
+- Wading through deep water
+- Navigating through allies in a cramped space
+- Avoiding a trap or crossing a slick surface
 
 If you want to move behind an enemy, **Sneak** with DC10 Dexterity to go Unnoticed and move behind an enemy:
 

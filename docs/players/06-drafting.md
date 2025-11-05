@@ -1,8 +1,6 @@
-# Drafting
+# The Skill Draft
 
-When Drafting you are presented with two random Skills and select one to keep.
-
-## 1, Roll for Draft Tables
+## 1. Roll for Draft Tables
 
 First roll d6 to determine which two tables to draft.
 
@@ -26,7 +24,7 @@ Then roll d66 for a Skill from each of the two tables.
 |     | 4   | Steady - Spend STR, reroll Ranged Attack                       |
 |     | 5   | Flank - DC10 STR, move behind an enemy                         |
 |     | 6   | Crush - Target rolls Pocket Down on melee attack rolls of 12   |
-| 4-6 | 1   | Guard - When your Pocket is 6, nearby allies gain Defense +1   |
+| 4-6 | 1   | Guard - When your Pocket is 6, nearby allies gain Evade +1     |
 |     | 2   | Reach - When your Pocket is 6, can target melee attacks        |
 |     | 3   | Brace - When your Pocket is 6, Damage Reduction -1             |
 |     | 4   | Big Damage - When Damage Gambit, deal +3 damage to the target  |
@@ -44,7 +42,7 @@ Then roll d66 for a Skill from each of the two tables.
 |     | 5   | Aim - Spend DEX, Ranged Attack Range +1                           |
 |     | 6   | Volley - Ranged Attack Rolls at 12, gain an Action                |
 | 4-6 | 1   | Quickdraw - Initiative Rolls +1                                   |
-|     | 2   | Dash - Once each turn mark Dex to gain 1 Move                     |
+|     | 2   | Dash - Once each turn mark Dex to regain your Move                |
 |     | 3   | Balance - When starting a turn with Pocket 1, you can roll Pocket |
 |     | 4   | Press - Spend 2 Control Gambit effects to gain an Action          |
 |     | 5   | Reflex - When rolling Pocket, the first roll is at Advantage      |
@@ -54,20 +52,20 @@ Then roll d66 for a Skill from each of the two tables.
 
 <!-- Design note: the goal for INS is versatility and planning -->
 
-| d6  | d6  | Insight Skills on 2, 4, 6                                         |
-| --- | --- | ----------------------------------------------------------------- |
-| 1-3 | 1   | Spellcraft - Learn a Spell or One spell you know is DC -1         |
-|     | 2   | Premonition - When Surprised, DC10 INS to cancel it               |
-|     | 3   | Farsight - Spend Action, INS - roll Advantage d6 times            |
-|     | 4   | Trivial - DC10 INS to Deduce without marking                      |
-|     | 5   | Dark Pact - Take d6 damage to reroll INS                          |
-|     | 6   | Eureka - When rolling 12, erase a marked INS                      |
-| 4-6 | 1   | Mindread - Spend INS, reroll an Attack                            |
-|     | 2   | Field Sense - Spend Action, INS - all allies Pocket Up            |
-|     | 3   | Disorient - Spend Action, INS - all enemies Pocket Down           |
-|     | 4   | Enemy - Spend Action, INS - target rolls Disadvantage d6 times    |
-|     | 5   | Channeler - Learn a Spell or +1 to Magic Rolls for each spent pip |
-|     | 6   | Clear Mind - When rolling INS, the first roll is at Advantage     |
+| d6  | d6  | Insight Skills on 2, 4, 6                                            |
+| --- | --- | -------------------------------------------------------------------- |
+| 1-3 | 1   | Spellcraft - Learn a Spell or One spell you know is DC -1            |
+|     | 2   | Premonition - When enemies notice you, DC10 INS to notice them first |
+|     | 3   | Farsight - Spend Action, INS - roll Advantage d6 times               |
+|     | 4   | Trivial - DC10 INS to Deduce without marking                         |
+|     | 5   | Dark Pact - Take d6 damage to reroll INS                             |
+|     | 6   | Eureka - When rolling 12, erase a marked INS                         |
+| 4-6 | 1   | Mindread - Spend INS, reroll an Attack                               |
+|     | 2   | Field Sense - Spend Action, INS - all allies Pocket Up               |
+|     | 3   | Disorient - Spend Action, INS - all enemies Pocket Down              |
+|     | 4   | Enemy - Spend Action, INS - target rolls Disadvantage d6 times       |
+|     | 5   | Channeler - Learn a Spell or +1 to Magic Rolls for each spent pip    |
+|     | 6   | Clear Mind - When rolling INS, the first roll is at Advantage        |
 
 <!-- Design note: the goal for WIL is backup and aid. It's either extra long range with regards to time, or it's expensive -->
 
@@ -95,4 +93,12 @@ You can only have 6 Active Skills. If you have more than 6 Skills
 - Select 6 to be your Active Skills
 - Keep the rest in reserve
 
-You may swap Active Skills when resting.
+You can swap Active Skills when resting.
+
+<!-- Skill ideas
+
+Spend Action, pocket up
+
+Spend Action, roll pocket, regain Move
+
+ -->

@@ -2,7 +2,7 @@
 
 ## Gambits
 
-Wager your Ability Points to perform Gambits.
+Make wagers for great effect.
 
 ### Damage
 

@@ -2,29 +2,20 @@
 
 In a clash of steel or a sprung trap - each moment is a test. You're rolling dice, swapping your Pocket, and spending Ability Points. When you hold the advantage, strike!
 
-The Guide sets the scene in terms of what the other
+The Guide starts an encounter by setting the scene and
 
-- Describe the dungeon in terms of zones of action
-- Outside of the narrative description of the current area
-
-  - Describe the area in terms of zones, distances, and movement
-  - Describe obvious interactive elements
-
-### Surprise
-
-If one side is **Surprised** at the start of an Encounter:
-
-- The other side takes **free turns**
-- Then roll **initiative** and continue the encounter normally
+- Identifies the known sources of danger - enemies, sprung traps, environmental hazards
+- Describes the area in terms of movement distances, zones, and movement hazards
+- Alerts to any obvious interactive elements like ropes, pits, braziers, barricades
 
 ## Initiative
 
-Encounters are run in rounds. Start each round with a d6 **Initiative** roll to determine when you can act. On a 4–6 you act before the Guide; on a 1–3 you act after the Guide. Reroll by marking Dexterity.
+Encounters are run in rounds. Start each round with a d6 **Initiative** roll to determine when you can act. On a 4–6 you can **Open** the round acting before The Guide; on a 1–3 you have to **Close** the round acting after The Guide. Reroll by marking Dexterity.
 
-- **Opening Seekers**: if you rolled 4-6 take you can take your turn first
+- **Open**: if you rolled 4-6 take you can take your turn first
 - **Guide**:
   - Take enemy turns
   - Trigger world events
-- **Closing Seekers**: if you have yet to take your turn, take it here
+- **Close**: if you have yet to take your turn, take it here
 
 On your turn, take a **Move** and an **Action** in any order alongside other Seekers taking their turns.

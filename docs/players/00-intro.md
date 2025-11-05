@@ -4,16 +4,16 @@ subtitle: "Version 1.1"
 author: "foodpuzz & lunarsignals"
 documentclass: extarticle
 geometry: [a5paper, margin=0.5in]
-fontsize: 9pt
-mainfont: "Times New Roman"
-output:
-  pdf_document:
-    latex_engine: xelatex
+classoption: 9pt
+mainfont: "IBM Plex Serif"
 header-includes:
   - \usepackage{titlesec}
-  - \titleformat{\section}{\normalfont\fontsize{10}{12}\bfseries}{\thesection}{1em}{}
-  - \titleformat{\subsection}{\normalfont\fontsize{9}{11}\bfseries}{\thesubsection}{1em}{}
-  - \renewcommand\normalsize{\fontsize{9}{11}\selectfont}
+  - \usepackage{hyperref}
+  - \newcommand{\UppercaseSection}[1]{\texorpdfstring{\MakeUppercase{#1}}{#1}}
+  - \titleformat{\section}[block]{\normalfont\fontsize{12}{16}\bfseries}{\thesection}{1em}{\UppercaseSection}
+  - \titleformat{\subsection}[block]{\normalfont\fontsize{10}{14}\bfseries}{\thesubsection}{1em}{\UppercaseSection}
+  - \titleformat{\subsubsection}[block]{\normalfont\fontsize{8}{11}\bfseries}{\thesubsubsection}{1em}{\UppercaseSection}
+  - \renewcommand\normalsize{\fontsize{8}{11}\selectfont}
   - \newcommand{\sectionbreak}{\clearpage}
 ---
 
@@ -25,28 +25,24 @@ header-includes:
 
 ## What You Need
 
-- 2–6 players
+- 2–6 players as Seekers
+- 1 player as The Guide
 - A ton of six-sided dice (d6s)
 - Pencil, paper, and character sheets
 
 ## Who is this for?
 
-MOONVEIL is a tabletop RPG dungeon crawler. It's for people that like swords and magic and board games. Most of the game is out in the open, but it's important when it's not. Dice are neutral territory.
+MOONVEIL is a tabletop RPG dungeon crawler. It's for people that like swords and magic. It's also for people that like dice games. The Guide is mostly transparent to the players - unless it's fun to not know. And the Dice are for when it's fun for no one to know.
 
-Some unique aspects
+Core features
 
-- Dice manipulation
+- 2d6 Core Resolution, Dice manipulation
 - Ability endurance
 - Skill drafting
-
-Other design philosophies
-
-- 2d6
+- Clear, simple choices
 - Classless, deadly
-- Collaborative narrative
 
 Inspired by
 
 - ICRPG, Shadowdark, FIST, Mörk Borg, 2400, Dungeon World, Cairn, DURF
-- Dungeon Meshi, Wizardry, Tactics Ogre
-- Magic the Gathering
+- Dungeon Meshi, Wizardry, Tactics Ogre, Magic the Gathering, Balatro

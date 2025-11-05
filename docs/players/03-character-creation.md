@@ -1,4 +1,4 @@
-# Create Your Seeker
+# Make Your Seeker
 
 You are a Seeker exploring the Moonveil looking for fallen Pieces of the Moon.
 
@@ -6,10 +6,10 @@ You are a Seeker exploring the Moonveil looking for fallen Pieces of the Moon.
 
 You have four Abilities:
 
-- **Strength**: fighting and raw power
-- **Dexterity**: speed and precision
-- **Insight**: depth of knowledge
-- **Willpower**: your inner drive
+- **Strength** - fighting and raw power
+- **Dexterity** - speed and precision
+- **Insight** - depth of knowledge
+- **Willpower** - your inner drive
 
 Assign **[3, 2, 1, 1]** to STR, DEX, INS, and WIL in any order, or roll d6 for a spread:
 
@@ -30,17 +30,17 @@ Assign **[3, 2, 1, 1]** to STR, DEX, INS, and WIL in any order, or roll d6 for a
 
 **Hit Track** shows how attacks affect you. There are three thresholds: Evade, Defense, Limit.
 
-**Evade starts at 4**. Mark it on your Hit Track. Attacks at or under **Evade** are **Misses**.
+**Evade starts at 4**. Mark the 4 box on your Hit Track with an 'E'. Attacks at or under are **Misses**.
 
 **Defense** is equal to **Evade + Pocket**.
 
-- Mark your Defense by putting your **Pocket die on your Hit Track at your Defense value**
+- Mark your Defense by putting your **Pocket die on the box equal to your Defense value**
 - Defense **cannot reach or exceed your Limit**. If it would, lower it to **one less than Limit**.
-- Attacks under Defense are **Weak Hits** -- at or over are **Strong Hits**
+- Attacks under Defense are **Weak Hits** - at or over are **Strong Hits**
 
-**Limit starts at 10**. Mark it on your Hit Track. Attacks at or over **Limit** are **Critical Hits**.
+**Limit starts at 10**. Mark the 10 box on your Hit Track with an 'L'. Attacks at or over are **Critical Hits**.
 
-Start at **Level** 1 and fill in your **Name** and **Portrait**.
+Start at **Level 1** and fill in your **Name** and **Portrait**.
 
 \clearpage
 
@@ -66,6 +66,8 @@ Start with d6 **Coin** and 3 **Dungeon Gear**. Then choose or roll d66 twice for
 |     | 6   | **Sleepsand** Spell                                       |
 | 6   | 1-3 | **Healing Circle** Miracle                                |
 |     | 4-6 | **Dawn Arm** Miracle                                      |
+
+\*Details in The Armory or The Archives.
 
 ## Draft and Choose An Ability
 
