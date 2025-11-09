@@ -21,7 +21,7 @@ Then roll d66 for a Skill from each of the two tables.
 | 1-3 | 1   | Loadbearer - Carry 12 items without Encumberance               |
 |     | 2   | Power Strike - Spend STR, +3 melee damage one turn             |
 |     | 3   | Trained - +1 melee damage                                      |
-|     | 4   | Steady - Spend STR, reroll Ranged Attack                       |
+|     | 4   | Steady - Can spend STR to reroll Ranged Attack                 |
 |     | 5   | Flank - DC10 STR, move behind an enemy                         |
 |     | 6   | Crush - Target rolls Pocket Down on melee attack rolls of 12   |
 | 4-6 | 1   | Guard - When your Pocket is 6, nearby allies gain Evade +1     |
@@ -38,8 +38,8 @@ Then roll d66 for a Skill from each of the two tables.
 | 1-3 | 1   | Sneak - Roll Sneak Moves at Advantage                             |
 |     | 2   | Ambush - When Unnoticed, roll Attacks at Advantage                |
 |     | 3   | Backstab - When Unnoticed, +d6\* Critical Hit damage              |
-|     | 4   | Feint - Spend DEX, reroll Edged or Piercing Melee Attack          |
-|     | 5   | Aim - Spend DEX, Ranged Attack Range +1                           |
+|     | 4   | Feint - Can spend DEX to reroll Edged or Piercing Melee Attacks   |
+|     | 5   | Aim - Can spend DEX, Ranged Attack Range +1                       |
 |     | 6   | Volley - Ranged Attack Rolls at 12, gain an Action                |
 | 4-6 | 1   | Quickdraw - Initiative Rolls +1                                   |
 |     | 2   | Dash - Once each turn mark Dex to regain your Move                |
@@ -52,20 +52,20 @@ Then roll d66 for a Skill from each of the two tables.
 
 <!-- Design note: the goal for INS is versatility and planning -->
 
-| d6  | d6  | Insight Skills on 2, 4, 6                                            |
-| --- | --- | -------------------------------------------------------------------- |
-| 1-3 | 1   | Spellcraft - Learn a Spell or One spell you know is DC -1            |
-|     | 2   | Premonition - When enemies notice you, DC10 INS to notice them first |
-|     | 3   | Farsight - Spend Action, INS - roll Advantage d6 times               |
-|     | 4   | Trivial - DC10 INS to Deduce without marking                         |
-|     | 5   | Dark Pact - Take d6 damage to reroll INS                             |
-|     | 6   | Eureka - When rolling 12, erase a marked INS                         |
-| 4-6 | 1   | Mindread - Spend INS, reroll an Attack                               |
-|     | 2   | Field Sense - Spend Action, INS - all allies Pocket Up               |
-|     | 3   | Disorient - Spend Action, INS - all enemies Pocket Down              |
-|     | 4   | Enemy - Spend Action, INS - target rolls Disadvantage d6 times       |
-|     | 5   | Channeler - Learn a Spell or +1 to Magic Rolls for each spent pip    |
-|     | 6   | Clear Mind - When rolling INS, the first roll is at Advantage        |
+| d6  | d6  | Insight Skills on 2, 4, 6                                                     |
+| --- | --- | ----------------------------------------------------------------------------- |
+| 1-3 | 1   | Spellcraft - Learn a Spell or One spell you know is DC -1                     |
+|     | 2   | Premonition - When enemies notice you, DC10 INS to notice them first          |
+|     | 3   | Farsight - Spend Action, INS - roll Advantage d6 times                        |
+|     | 4   | Trivial - DC10 INS to Deduce without marking                                  |
+|     | 5   | Dark Pact - Take d6 damage to reroll INS                                      |
+|     | 6   | Eureka - When rolling 12, erase a marked INS                                  |
+| 4-6 | 1   | Mindread - Can spend INS to reroll an Attack                                  |
+|     | 2   | Field Sense - Spend Action, INS - all allies Pocket Up                        |
+|     | 3   | Disorient - Spend Action, INS - all enemies Pocket Down                       |
+|     | 4   | Enemy - Spend Action, INS - target rolls Disadvantage d6 times                |
+|     | 5   | Channeler - Learn a Spell or +1 to Magic Rolls for each spent point this turn |
+|     | 6   | Clear Mind - When rolling INS, the first roll is at Advantage                 |
 
 <!-- Design note: the goal for WIL is backup and aid. It's either extra long range with regards to time, or it's expensive -->
 
@@ -75,8 +75,8 @@ Then roll d66 for a Skill from each of the two tables.
 |     | 2   | Endure - Spend Action, WIL - Full Defend Gambit DC7               |
 |     | 3   | Command - Spend Action, WIL - target an ally, they gain an Action |
 |     | 4   | Resolve - Spend WIL - reroll a Gambit                             |
-|     | 5   | Driven - When rolling 12 on for WIL, erase 1 pip of WIL           |
-|     | 6   | Reclaim - When rolling 2, erase d6 pips among STR, DEX, and INS   |
+|     | 5   | Driven - When rolling 12 on for WIL, erase 1 point of WIL         |
+|     | 6   | Reclaim - When rolling 2, erase d6 points among STR, DEX, and INS |
 | 4-6 | 1   | Quick Rally - Spend Move, 2 WIL - Rally                           |
 |     | 2   | Surge - When Rallying, roll an additional +d6 HP when Rallying    |
 |     | 3   | Bolstered - HP gain from Rally is rolled at Advantage             |

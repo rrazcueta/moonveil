@@ -1,4 +1,4 @@
-# Magic & The Archive
+# The Archives
 
 Magic comes in two forms - **Spells** and **Miracles**. Spells are shaped by **Insight** into the unknown. Miracles are drawn forth by sheer **Willpower**.
 
@@ -19,7 +19,7 @@ If your Spell roll fails at or under The Verge, lose 1 Max HP and increase The V
 
 Instead of spending Willpower to reroll a Miracle, you can take on **Guilt**.
 
-- If you have no Guilt, fill 1 slot with Guilt.
+- If you have no Guilt, fill 1 Equipment slot with Guilt.
 - Otherwise, double the amount you are carrying.
 
 Guilt cannot be discarded. Guilt is removed only by genuine sacrifice, as decided with The Guide.

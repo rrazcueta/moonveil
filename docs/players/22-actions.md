@@ -36,6 +36,6 @@ If you believe the information provides no meaningful benefit, inform The Guide,
 
 Spend an Action and mark 1 Willpower to
 
-- Erase marked pips in Strength, Dexterity, and Insight
+- Erase marked points in Strength, Dexterity, and Insight
 - Restore 1d6 Hit Points
 - Pocket Up

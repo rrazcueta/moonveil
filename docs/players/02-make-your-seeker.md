@@ -1,17 +1,19 @@
 # Make Your Seeker
 
-You are a Seeker exploring the Moonveil looking for fallen Pieces of the Moon.
+You are a Seeker exploring the Moonveil. Curiosity? Glory? Power? That's up to you.
 
 ## Abilities, Hit Points, Pocket
 
-You have four Abilities:
+Abilities are resources to spend. Spend points from an Ability to retry rolls within that domain, bolster actions, or gamble for effects. They're recovered when you Rally or Rest.
 
-- **Strength** - fighting and raw power
-- **Dexterity** - speed and precision
-- **Insight** - depth of knowledge
-- **Willpower** - your inner drive
+You have four different Abilities:
 
-Assign **[3, 2, 1, 1]** to STR, DEX, INS, and WIL in any order, or roll d6 for a spread:
+- **Strength** - fighting and raw power. Each point also grants Hit Points.
+- **Dexterity** - speed and precision. Reroll Initiative or Full Defense.
+- **Insight** - depth of knowledge. Reroll Magic spells and tactics.
+- **Willpower** - your inner drive. Reroll Miracles or Rally to recover HP and abilities.
+
+Assign **[2, 2, 1, 1]** to STR, DEX, INS, and WIL in any order, or roll d6 for a spread:
 
 | d6  | Strength | Dexterity | Insight | Willpower |
 | :-: | :------: | :-------: | :-----: | --------- |
@@ -48,30 +50,30 @@ Start at **Level 1** and fill in your **Name** and **Portrait**.
 
 Start with d6 **Coin** and 3 **Dungeon Gear**. Then choose or roll d66 twice for starting gifts.
 
-| d6  | d6  | Equipment and Magic                                       |
-| --- | --- | --------------------------------------------------------- |
-| 1-2 | 1   | Sword                                                     |
-|     | 2   | Spear                                                     |
-|     | 3   | Hammer                                                    |
-|     | 4   | Bow                                                       |
-|     | 5   | Whip                                                      |
-|     | 6   | A Huge Bomb!                                              |
-| 3-4 | 1-2 | Helmet                                                    |
-|     | 3-4 | Shield                                                    |
-|     | 5   | Leather Armor                                             |
-|     | 6   | Cloak                                                     |
-| 5   | 1-2 | **Air Pressure**, **Heavylite**, and **Moonsmell** Spells |
-|     | 3-4 | **Egress** and **Invisibility** Spells                    |
-|     | 5   | **Magic Orb** Spell                                       |
-|     | 6   | **Sleepsand** Spell                                       |
-| 6   | 1-3 | **Healing Circle** Miracle                                |
-|     | 4-6 | **Dawn Arm** Miracle                                      |
+| d6  | d6  | Type    | Gift                                               |
+| --- | --- | ------- | -------------------------------------------------- |
+| 1-2 | 1   | Item    | Sword                                              |
+|     | 2   |         | Spear                                              |
+|     | 3   |         | Hammer                                             |
+|     | 4   |         | Bow                                                |
+|     | 5   |         | Whip                                               |
+|     | 6   |         | A Huge Bomb!                                       |
+| 3-4 | 1-2 |         | Helmet                                             |
+|     | 3-4 |         | Shield                                             |
+|     | 5   |         | Medium Armor                                       |
+|     | 6   |         | Cloak                                              |
+| 5   | 1-2 | Spell   | **Air Pressure**, **Heavylite**, and **Moonsmell** |
+|     | 3-4 |         | **Egress** and **Invisibility**                    |
+|     | 5   |         | **Magic Orb**                                      |
+|     | 6   |         | **Sleepsand**                                      |
+| 6   | 1-3 | Miracle | **Healing Circle**                                 |
+|     | 4-6 |         | **Dawn Arm**                                       |
 
-\*Details in The Armory or The Archives.
+For Items see **The Armory**. For Spells and Miracles see **The Archives**.
 
 ## Draft and Choose An Ability
 
-Draft a Skill.
+Draft a Skill. See **The Skill Draft**.
 
 Increase one Ability point +1.
 

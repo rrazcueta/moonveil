@@ -6,7 +6,7 @@ Make wagers for great effect.
 
 ### Damage
 
-Before a melee attack if you have at least 1 pip of Strength.
+Before a melee attack if you have at least 1 point of Strength left to mark.
 
 - On a Strong Hit or better
   - Smash and deal d6\* bonus damage to the original target or
@@ -29,14 +29,14 @@ Before a melee attack if you have a Pocket of 4 or more.
 
 ### Precision
 
-Before a ranged attack if you have at least 1 pip of Dexterity.
+Before a ranged attack if you have at least 1 point of Dexterity to mark.
 
 - Deal double damage or the target rolls Pocket Down
 - If your attack roll is less than the target Limit, mark all your Dexterity
 
 ### Full Defend
 
-After being hit if you have at least 1 pip of Dexterity.
+After being hit if you have at least 1 point of Dexterity to mark.
 
 - Roll DC10 Dexterity. On success, negate all damage and effects.
 - On failure, take full damage, and mark all your Dexterity.

@@ -23,6 +23,8 @@ header-includes:
 
 > YOU’RE IN A CARAVAN OF SEEKERS INVESTIGATING THE MOONVEIL. YOUR VEIL GUIDE WILL TAKE YOU WHERE YOU NEED TO GO.
 
+\clearpage
+
 ## What You Need
 
 - 2–6 players as Seekers
@@ -32,13 +34,16 @@ header-includes:
 
 ## Who is this for?
 
-MOONVEIL is a tabletop RPG dungeon crawler. It's for people that like swords and magic. It's also for people that like dice games. The Guide is mostly transparent to the players - unless it's fun to not know. And the Dice are for when it's fun for no one to know.
+MOONVEIL is a tabletop RPG dungeon crawler. It's for people that like swords and magic and dice.
+
+You play as Seekers exploring secrets under the Moonveil. The Guide helps you see what’s there, and the Dice handle whatever’s left to fate.
 
 Core features
 
-- 2d6 Core Resolution, Dice manipulation
+- 2d6 Core Resolution
+- Dice manipulation
 - Ability endurance
-- Skill drafting
+- Randomized skill drafting
 - Clear, simple choices
 - Classless, deadly
 
@@ -46,20 +51,34 @@ Inspired by
 
 - ICRPG, Shadowdark, FIST, Mörk Borg, 2400, Dungeon World, Cairn, DURF
 - Dungeon Meshi, Wizardry, Tactics Ogre, Magic the Gathering, Balatro
+# Playing The Game
+
+Play cycles between exploration and danger. As you explore, **talk with your Guide** about your intentions. You can attempt anything and automatically succeed at **reasonable or unchallenged actions**. When the outcome is risky, uncertain, or perilous, you must make a **Dice Check** or enter an **Encounter**.
+
+## Dice Checks and Controlling Luck
+
+When you take a significant risk you roll against a 2d6 **Dice Check** (**DC**) set by The Guide. At or over the DC is a success.
+
+But you control your own luck. You have a **Pocket Die** to carry fortune from one roll to the next. And you spend **Ability Points** to push through failures. You can Pocket on any Dice Check, and reroll as long as you have Points.
+
+1. **Pocket** - Swap one of the dice with your Pocket Die
+2. **Push** - Spend a point in a relevant Ability to reroll
 # Make Your Seeker
 
-You are a Seeker exploring the Moonveil looking for fallen Pieces of the Moon.
+You are a Seeker exploring the Moonveil. Curiosity? Glory? Power? That's up to you.
 
 ## Abilities, Hit Points, Pocket
 
-You have four Abilities:
+Abilities are resources to spend. Spend points from an Ability to retry rolls within that domain, bolster actions, or gamble for effects. They're recovered when you Rally or Rest.
 
-- **Strength** - fighting and raw power
-- **Dexterity** - speed and precision
-- **Insight** - depth of knowledge
-- **Willpower** - your inner drive
+You have four different Abilities:
 
-Assign **[3, 2, 1, 1]** to STR, DEX, INS, and WIL in any order, or roll d6 for a spread:
+- **Strength** - fighting and raw power. Each point also grants Hit Points.
+- **Dexterity** - speed and precision. Reroll Initiative or Full Defense.
+- **Insight** - depth of knowledge. Reroll Magic spells and tactics.
+- **Willpower** - your inner drive. Reroll Miracles or Rally to recover HP and abilities.
+
+Assign **[2, 2, 1, 1]** to STR, DEX, INS, and WIL in any order, or roll d6 for a spread:
 
 | d6  | Strength | Dexterity | Insight | Willpower |
 | :-: | :------: | :-------: | :-----: | --------- |
@@ -96,30 +115,30 @@ Start at **Level 1** and fill in your **Name** and **Portrait**.
 
 Start with d6 **Coin** and 3 **Dungeon Gear**. Then choose or roll d66 twice for starting gifts.
 
-| d6  | d6  | Equipment and Magic                                       |
-| --- | --- | --------------------------------------------------------- |
-| 1-2 | 1   | Sword                                                     |
-|     | 2   | Spear                                                     |
-|     | 3   | Hammer                                                    |
-|     | 4   | Bow                                                       |
-|     | 5   | Whip                                                      |
-|     | 6   | A Huge Bomb!                                              |
-| 3-4 | 1-2 | Helmet                                                    |
-|     | 3-4 | Shield                                                    |
-|     | 5   | Leather Armor                                             |
-|     | 6   | Cloak                                                     |
-| 5   | 1-2 | **Air Pressure**, **Heavylite**, and **Moonsmell** Spells |
-|     | 3-4 | **Egress** and **Invisibility** Spells                    |
-|     | 5   | **Magic Orb** Spell                                       |
-|     | 6   | **Sleepsand** Spell                                       |
-| 6   | 1-3 | **Healing Circle** Miracle                                |
-|     | 4-6 | **Dawn Arm** Miracle                                      |
+| d6  | d6  | Type    | Gift                                               |
+| --- | --- | ------- | -------------------------------------------------- |
+| 1-2 | 1   | Item    | Sword                                              |
+|     | 2   |         | Spear                                              |
+|     | 3   |         | Hammer                                             |
+|     | 4   |         | Bow                                                |
+|     | 5   |         | Whip                                               |
+|     | 6   |         | A Huge Bomb!                                       |
+| 3-4 | 1-2 |         | Helmet                                             |
+|     | 3-4 |         | Shield                                             |
+|     | 5   |         | Medium Armor                                       |
+|     | 6   |         | Cloak                                              |
+| 5   | 1-2 | Spell   | **Air Pressure**, **Heavylite**, and **Moonsmell** |
+|     | 3-4 |         | **Egress** and **Invisibility**                    |
+|     | 5   |         | **Magic Orb**                                      |
+|     | 6   |         | **Sleepsand**                                      |
+| 6   | 1-3 | Miracle | **Healing Circle**                                 |
+|     | 4-6 |         | **Dawn Arm**                                       |
 
-\*Details in The Armory or The Archives.
+For Items see **The Armory**. For Spells and Miracles see **The Archives**.
 
 ## Draft and Choose An Ability
 
-Draft a Skill.
+Draft a Skill. See **The Skill Draft**.
 
 Increase one Ability point +1.
 
@@ -146,93 +165,7 @@ Increase one Ability point +1.
 |     | 4   | A lock of hair...                      |
 |     | 5   | A string of prayer beeds...            |
 |     | 6   | A nondescript gold ring...             | -->
-# Items & The Armory
-
-Exploring the Moonveil means hauling gear — and sometimes hauling friends. Track everything you carry in **Equipment**.
-
-- **Slots** - Most items take up 1 slot
-  - Smaller items fit multiple to one slot
-  - Larger items take up 2 or more slots
-- **Extra** - The smallest things like letters, keys, or coins are free to carry
-
-## Dungeon Gear
-
-You can quickly gear up by purchasing **Dungeon Gear**. It is a special item that takes 1 slot. When you use it, it becomes any reasonable adventuring tool like a club or knife, arrows, a tent, rope, torches, rations, etc.
-
-For some kinds of items roll d6 to determine how much is available. Examples:
-
-- If you pull out rope you have d6 x 10 feet of rope
-- If you pull out rations you have enough food and drink for d6 Seekers.
-
-If you think you might need something in particular, ask The Guide if they would allow it as Dungeon Gear. If they say no, ask what it would take to acquire it.
-
-## Encumberance
-
-You can carry **Willpower + 6** items without penalty. For each item beyond that, you gain **Encumbrance**. Subtract your Encumbrance from every roll before resolving it.
-
-## Armor
-
-| Equipment   | Cost | Description                                            |
-| ----------- | ---: | ------------------------------------------------------ |
-| Shield      |    4 | When your Pocket is Odd, Evade +1                      |
-| Greatshield |    8 | 2 Slots. Evade +1, but when Pocket < 4, you can't Move |
-| Helmet      |    2 | Limit +1                                               |
-| Cloak       |    6 | Can roll Pocket on Moving                              |
-
-| Armor  | Cost | Slots | Description                   |
-| ------ | ---: | :---: | ----------------------------- |
-| Light  |    2 |   1   | Weak Hit Damage Reduction -1  |
-| Medium |    5 |   2   | Damage Reduction -1           |
-| Heavy  |  >50 |   3   | Damage Reduction -1. Evade +1 |
-
-## Weapons
-
-| Melee                 | Cost | Description                          |
-| --------------------- | ---: | ------------------------------------ |
-| Club, Knife, or Staff |    1 | Dungeon Gear                         |
-| Dagger                |    2 | Roll Advantage When Unnoticed        |
-| Spear                 |    4 | Strong Damage +2                     |
-| Hammer                |    5 | Critical Damage +d6\*                |
-| Axe                   |    5 | Minimum Damage 2. Critical Damage +3 |
-| Sword                 |    6 | Minimum Damage 3                     |
-
-| 2H Melee   | Cost | Slots | Description                             |
-| ---------- | ---: | :---: | --------------------------------------- |
-| Great Club |    8 |   2   | Critical Damage +2d6\*                  |
-| Pike       |    9 |   2   | Strong Damage +6                        |
-| Great Axe  |   10 |   2   | Minimum Damage 3. Critical Damage +d6\* |
-| Halberd    |   10 |   2   | Strong Damage +2. Critical Damage +d6\* |
-| Greatsword |    9 |   2   | Minimum Damage 3. Strong Damage +2      |
-
-| Ranged   | Cost | Range | Description                                                  |
-| -------- | ---: | :---: | ------------------------------------------------------------ |
-| Whip     |    3 |   0   | Target rolls Pocket Down on any hit                          |
-| Bow      |    2 |   2   |                                                              |
-| Longbow  |    2 |   2   | Critical Damage +d6\*. When Range is 0, Roll at Disadvantage |
-| Crossbow |    8 |   1   | Strong Damage +2. Spend Move to Reload                       |
-
-## Et Cetera
-
-| Special      | Cost | Description                                   |
-| ------------ | ---- | --------------------------------------------- |
-| Bomb         | 5    | Range 1. 1 Round to detonate. d6 area damage  |
-| A Huge Bomb! | >25  | Range 1. 1 Round to detonate. 6d6 area damage |
-| Caltrops     | 1    | Pocket down to traverse or d6/2 damage        |
-| Oil          | 1    | Pocket Down to traverse. Fire is d6/2 damage  |
-| Arrows       | 1    | Dungeon Gear                                  |
-| Bolts        | 1    | Dungeon Gear                                  |
-
-<!-- | Quiver or Cache |    1 |       |       | Can be found in Dungeon Gear     |
-|                 |      |       |       | Empties out when rolling under 3 |
-| Heavy Crossbow  |   10 |   2   |   1   | Strong Damage +3                 |
-|                 |      |       |       | Spend Action to Reload.          |
-| Longbow         |    3 |   3   |   1   | Critical Damage +d6\*            |
-|                 |      |       |       | Roll Disadvantage against Near.  |
-|                 |      |       |       | Spend Action and Move to shoot.  |
-| Throwing Knife  |    2 |   1   |  4:1  | Melee Minimum Damage 2           |
-| Javelin         |    2 |   1   |  2:1  | Melee Strong Damage +1           |
-| Throwing Axe    |    3 |   1   |   1   | Melee Critical Damage +d6/2      | -->
-# Magic & The Archive
+# The Archives
 
 Magic comes in two forms - **Spells** and **Miracles**. Spells are shaped by **Insight** into the unknown. Miracles are drawn forth by sheer **Willpower**.
 
@@ -253,7 +186,7 @@ If your Spell roll fails at or under The Verge, lose 1 Max HP and increase The V
 
 Instead of spending Willpower to reroll a Miracle, you can take on **Guilt**.
 
-- If you have no Guilt, fill 1 slot with Guilt.
+- If you have no Guilt, fill 1 Equipment slot with Guilt.
 - Otherwise, double the amount you are carrying.
 
 Guilt cannot be discarded. Guilt is removed only by genuine sacrifice, as decided with The Guide.
@@ -348,7 +281,7 @@ Then roll d66 for a Skill from each of the two tables.
 | 1-3 | 1   | Loadbearer - Carry 12 items without Encumberance               |
 |     | 2   | Power Strike - Spend STR, +3 melee damage one turn             |
 |     | 3   | Trained - +1 melee damage                                      |
-|     | 4   | Steady - Spend STR, reroll Ranged Attack                       |
+|     | 4   | Steady - Can spend STR to reroll Ranged Attack                 |
 |     | 5   | Flank - DC10 STR, move behind an enemy                         |
 |     | 6   | Crush - Target rolls Pocket Down on melee attack rolls of 12   |
 | 4-6 | 1   | Guard - When your Pocket is 6, nearby allies gain Evade +1     |
@@ -365,8 +298,8 @@ Then roll d66 for a Skill from each of the two tables.
 | 1-3 | 1   | Sneak - Roll Sneak Moves at Advantage                             |
 |     | 2   | Ambush - When Unnoticed, roll Attacks at Advantage                |
 |     | 3   | Backstab - When Unnoticed, +d6\* Critical Hit damage              |
-|     | 4   | Feint - Spend DEX, reroll Edged or Piercing Melee Attack          |
-|     | 5   | Aim - Spend DEX, Ranged Attack Range +1                           |
+|     | 4   | Feint - Can spend DEX to reroll Edged or Piercing Melee Attacks   |
+|     | 5   | Aim - Can spend DEX, Ranged Attack Range +1                       |
 |     | 6   | Volley - Ranged Attack Rolls at 12, gain an Action                |
 | 4-6 | 1   | Quickdraw - Initiative Rolls +1                                   |
 |     | 2   | Dash - Once each turn mark Dex to regain your Move                |
@@ -379,20 +312,20 @@ Then roll d66 for a Skill from each of the two tables.
 
 <!-- Design note: the goal for INS is versatility and planning -->
 
-| d6  | d6  | Insight Skills on 2, 4, 6                                            |
-| --- | --- | -------------------------------------------------------------------- |
-| 1-3 | 1   | Spellcraft - Learn a Spell or One spell you know is DC -1            |
-|     | 2   | Premonition - When enemies notice you, DC10 INS to notice them first |
-|     | 3   | Farsight - Spend Action, INS - roll Advantage d6 times               |
-|     | 4   | Trivial - DC10 INS to Deduce without marking                         |
-|     | 5   | Dark Pact - Take d6 damage to reroll INS                             |
-|     | 6   | Eureka - When rolling 12, erase a marked INS                         |
-| 4-6 | 1   | Mindread - Spend INS, reroll an Attack                               |
-|     | 2   | Field Sense - Spend Action, INS - all allies Pocket Up               |
-|     | 3   | Disorient - Spend Action, INS - all enemies Pocket Down              |
-|     | 4   | Enemy - Spend Action, INS - target rolls Disadvantage d6 times       |
-|     | 5   | Channeler - Learn a Spell or +1 to Magic Rolls for each spent pip    |
-|     | 6   | Clear Mind - When rolling INS, the first roll is at Advantage        |
+| d6  | d6  | Insight Skills on 2, 4, 6                                                     |
+| --- | --- | ----------------------------------------------------------------------------- |
+| 1-3 | 1   | Spellcraft - Learn a Spell or One spell you know is DC -1                     |
+|     | 2   | Premonition - When enemies notice you, DC10 INS to notice them first          |
+|     | 3   | Farsight - Spend Action, INS - roll Advantage d6 times                        |
+|     | 4   | Trivial - DC10 INS to Deduce without marking                                  |
+|     | 5   | Dark Pact - Take d6 damage to reroll INS                                      |
+|     | 6   | Eureka - When rolling 12, erase a marked INS                                  |
+| 4-6 | 1   | Mindread - Can spend INS to reroll an Attack                                  |
+|     | 2   | Field Sense - Spend Action, INS - all allies Pocket Up                        |
+|     | 3   | Disorient - Spend Action, INS - all enemies Pocket Down                       |
+|     | 4   | Enemy - Spend Action, INS - target rolls Disadvantage d6 times                |
+|     | 5   | Channeler - Learn a Spell or +1 to Magic Rolls for each spent point this turn |
+|     | 6   | Clear Mind - When rolling INS, the first roll is at Advantage                 |
 
 <!-- Design note: the goal for WIL is backup and aid. It's either extra long range with regards to time, or it's expensive -->
 
@@ -402,8 +335,8 @@ Then roll d66 for a Skill from each of the two tables.
 |     | 2   | Endure - Spend Action, WIL - Full Defend Gambit DC7               |
 |     | 3   | Command - Spend Action, WIL - target an ally, they gain an Action |
 |     | 4   | Resolve - Spend WIL - reroll a Gambit                             |
-|     | 5   | Driven - When rolling 12 on for WIL, erase 1 pip of WIL           |
-|     | 6   | Reclaim - When rolling 2, erase d6 pips among STR, DEX, and INS   |
+|     | 5   | Driven - When rolling 12 on for WIL, erase 1 point of WIL         |
+|     | 6   | Reclaim - When rolling 2, erase d6 points among STR, DEX, and INS |
 | 4-6 | 1   | Quick Rally - Spend Move, 2 WIL - Rally                           |
 |     | 2   | Surge - When Rallying, roll an additional +d6 HP when Rallying    |
 |     | 3   | Bolstered - HP gain from Rally is rolled at Advantage             |
@@ -429,14 +362,14 @@ Spend Action, pocket up
 Spend Action, roll pocket, regain Move
 
  -->
-<!-- # Items
+# The Armory
 
 Exploring the Moonveil means hauling gear — and sometimes hauling friends. Track everything you carry in **Equipment**.
 
-- **Slots**: Most items take up 1 slot
-  - Larger items take up 2 or more slots
+- **Slots** - Most items take up 1 slot
   - Smaller items fit multiple to one slot
-- **Extra**: The smallest things like letters, keys, or coins are free to carry
+  - Larger items take up 2 or more slots
+- **Extra** - The smallest things like letters, keys, or coins are free to carry
 
 ## Dungeon Gear
 
@@ -447,87 +380,75 @@ For some kinds of items roll d6 to determine how much is available. Examples:
 - If you pull out rope you have d6 x 10 feet of rope
 - If you pull out rations you have enough food and drink for d6 Seekers.
 
-If you think you might need something in particular, ask the Guide if they would allow it as Dungeon Gear. If they say no, ask what it would take to acquire it.
+If you think you might need something in particular, ask The Guide if they would allow it as Dungeon Gear. If they say no, ask what it would take to acquire it.
 
 ## Encumberance
 
 You can carry **Willpower + 6** items without penalty. For each item beyond that, you gain **Encumbrance**. Subtract your Encumbrance from every roll before resolving it.
 
-## Carrying Your Friends
+## Armor
 
-Carrying a Seeker, without their gear, takes 5 slots. You need to accomodate slots for your own gear and any gear of theirs as well. -->
-<!-- # Magic
+| Equipment | Cost | Description                       |
+| --------- | ---: | --------------------------------- |
+| Shield    |    4 | When your Pocket is Odd, Evade +1 |
+| Helmet    |    2 | Limit +1                          |
+| Cloak     |    6 | Can roll Pocket on Moving         |
 
-Magic comes in two forms: **Spells** and **Miracles**. Spells are shaped by **Insight** into the unknown. Miracles are drawn forth by sheer **Willpower**.
+| Armor  | Cost | Slots | Description                   |
+| ------ | ---: | :---: | ----------------------------- |
+| Light  |    2 |   1   | Weak Hit Damage Reduction -1  |
+| Medium |    5 |   2   | Damage Reduction -1           |
+| Heavy  |  >50 |   3   | Damage Reduction -1. Evade +1 |
 
-## Casting Magic
+\clearpage
 
-When you cast a Spell or Miracle, roll 2d6 against its DC:
+## Weapons
 
-- Success: Roll ≥ DC – the effect takes place.
-- Failure: Roll < DC – the effect fizzles, and you lose it until you Rest.
+| Melee              | Cost | Description                          |
+| ------------------ | ---: | ------------------------------------ |
+| Club, Knife, Staff |    1 | Dungeon Gear                         |
+| Dagger             |    2 | Can reroll attacks with Dexterity    |
+| Spear              |    4 | Strong Damage +2                     |
+| Hammer             |    5 | Critical Damage +d6\*                |
+| Axe                |    5 | Minimum Damage 2. Critical Damage +3 |
+| Sword              |    6 | Minimum Damage 3                     |
 
-## Spells and Arcane Failure
+| 2H Melee   | Cost | Slots | Description                             |
+| ---------- | ---: | :---: | --------------------------------------- |
+| Great Club |    8 |   2   | Critical Damage +2d6\*                  |
+| Pike       |    9 |   2   | Strong Damage +6                        |
+| Great Axe  |   10 |   2   | Minimum Damage 3. Critical Damage +d6\* |
+| Halberd    |   10 |   2   | Strong Damage +2. Critical Damage +d6\* |
+| Greatsword |    9 |   2   | Minimum Damage 3. Strong Damage +2      |
 
-Each day **The Verge** starts at 4.
+| Ranged   | Cost | Range | Description                                                    |
+| -------- | ---: | :---: | -------------------------------------------------------------- |
+| Whip     |    3 |   0   | Target rolls Pocket Down on any hit                            |
+| Bow      |    2 |   2   |                                                                |
+| Longbow  |    5 |   2   | Critical Damage +d6\*. When Range is 0, Attack at Disadvantage |
+| Crossbow |    8 |   1   | Strong Damage +2. Spend Move to Reload                         |
 
-If your Spell roll fails at or under The Verge, lose 1 Max HP and increase The Verge +1.
+## Et Cetera
 
-## Miracles and Penance
+| Special       | Cost | Description                                         |
+| ------------- | ---- | --------------------------------------------------- |
+| Bomb          | 5    | Throw Range 1. 1 Round to detonate. d6 area damage  |
+| A Huge Bomb!  | >25  | Throw Range 1. 1 Round to detonate. 6d6 area damage |
+| Caltrops      | 1    | Pocket down to traverse or d6/2 damage              |
+| Oil           | 1    | Pocket Down to traverse. Fire is d6/2 damage        |
+| Arrows, Bolts | 1    | Dungeon Gear                                        |
 
-Instead of spending Willpower to reroll a Miracle, you can take on **Guilt**.
-
-- If you have no Guilt, fill 1 slot with Guilt.
-- Otherwise, double the amount you are carrying.
-
-Guilt cannot be discarded. Guilt is removed only by genuine sacrifice, as decided with the Guide. -->
-# Playing The Game
-
-Play cycles between exploration and danger. As you explore, **talk with your Guide** about your intentions. You can attempt anything and automatically succeed at **reasonable or unchallenged actions**. When the outcome is risky, uncertain, or perilous, you must make a **Dice Check** or enter an **Encounter**.
-
-## Dice Checks and the Pocket Push
-
-<!-- Your **Pocket** is your Seeker's luck, confidence, and their strange pull on the universe itself - and at the table, it lets you swap a die from one roll to the next.
-
-Your **Abilities** - **Strength**, **Dexterity**, **Insight**, and **Willpower** - are resources to spend to push through bad rolls. -->
-
-When you take a significant risk you roll against a 2d6 **Dice Check** (**DC**) set by The Guide. At or over the DC is a success.
-
-But you control your own luck. Your **Pocket Die** carries fortune from one roll to the next, and your **Ability Points** let you push through failure. You can Pocket on any Dice Check, and reroll as long as you have Points.
-
-1. **Pocket** - Swap one of the dice with your Pocket Die
-2. **Push** - Mark a pip in a relevant Ability to reroll
-
-## Advantage and Disadvantage Rolls
-
-In Advantage roll an extra die, remove the worst. In Disadvantage roll an extra die, lose the best.
-
-## Pocket Rolls
-
-Rolling Pocket is an effect. Sometimes it's chosen, and other times it's forced. You can mark Dexterity to reroll any Pocket roll.
-
-- **Pocket**: set your Pocket to d6.
-- **Pocket Up**: roll d6 and compare to your Pocket. Take the bigger value.
-- **Pocket Down**: roll d6 and compare to your Pocket. Take the smaller value.
-
-## Exploding Rolls
-
-Rolls denoted by an asterisk are exploding rolls. Reroll these rolls on 6, adding all the dice rolled this way.
-
-<!-- ## Other rolls
-
-### Pocket Rolls
-
-Rolling Pocket is an effect. Sometimes it's chosen, and other times it's forced. You can mark Dexterity to reroll any Pocket roll.
-
-- **Pocket**: set your Pocket to d6.
-- **Pocket Up**: roll d6 and compare to your Pocket. Take the bigger value.
-- **Pocket Down**: roll d6 and compare to your Pocket. Take the smaller value.
-
-### Exploding Rolls
-
-Rolls denoted by an asterisk are exploding rolls. Reroll these rolls on 6, adding all the dice rolled this way. -->
-# Rest, Growth & Death
+<!-- | Quiver or Cache |    1 |       |       | Can be found in Dungeon Gear     |
+|                 |      |       |       | Empties out when rolling under 3 |
+| Heavy Crossbow  |   10 |   2   |   1   | Strong Damage +3                 |
+|                 |      |       |       | Spend Action to Reload.          |
+| Longbow         |    3 |   3   |   1   | Critical Damage +d6\*            |
+|                 |      |       |       | Roll Disadvantage against Near.  |
+|                 |      |       |       | Spend Action and Move to shoot.  |
+| Throwing Knife  |    2 |   1   |  4:1  | Melee Minimum Damage 2           |
+| Javelin         |    2 |   1   |  2:1  | Melee Strong Damage +1           |
+| Throwing Axe    |    3 |   1   |   1   | Melee Critical Damage +d6/2      | -->
+# Rest & Growth
 
 In a safe space, share a meal and spend 8 hours to recover.
 
@@ -557,6 +478,24 @@ If you reached a milestone
 - Level +1
 - Draft a new Skill.
 - +1 in any Ability Point
+
+# Rolls & Death
+
+## Advantage and Disadvantage Rolls
+
+In Advantage roll an extra die, remove the worst. In Disadvantage roll an extra die, lose the best.
+
+## Pocket Rolls
+
+Rolling Pocket is an effect. Sometimes it's chosen, and other times it's forced. You can spend Dexterity to reroll any Pocket roll.
+
+- **Pocket**: set your Pocket to d6.
+- **Pocket Up**: roll d6 and compare to your Pocket. Take the bigger value.
+- **Pocket Down**: roll d6 and compare to your Pocket. Take the smaller value.
+
+## Exploding Rolls
+
+Rolls denoted by an asterisk are exploding rolls. Reroll these rolls on 6, adding all the dice rolled this way.
 
 ## Death
 
@@ -649,7 +588,7 @@ If you believe the information provides no meaningful benefit, inform The Guide,
 
 Spend an Action and mark 1 Willpower to
 
-- Erase marked pips in Strength, Dexterity, and Insight
+- Erase marked points in Strength, Dexterity, and Insight
 - Restore 1d6 Hit Points
 - Pocket Up
 \clearpage
@@ -660,7 +599,7 @@ Make wagers for great effect.
 
 ### Damage
 
-Before a melee attack if you have at least 1 pip of Strength.
+Before a melee attack if you have at least 1 point of Strength left to mark.
 
 - On a Strong Hit or better
   - Smash and deal d6\* bonus damage to the original target or
@@ -683,14 +622,14 @@ Before a melee attack if you have a Pocket of 4 or more.
 
 ### Precision
 
-Before a ranged attack if you have at least 1 pip of Dexterity.
+Before a ranged attack if you have at least 1 point of Dexterity to mark.
 
 - Deal double damage or the target rolls Pocket Down
 - If your attack roll is less than the target Limit, mark all your Dexterity
 
 ### Full Defend
 
-After being hit if you have at least 1 pip of Dexterity.
+After being hit if you have at least 1 point of Dexterity to mark.
 
 - Roll DC10 Dexterity. On success, negate all damage and effects.
 - On failure, take full damage, and mark all your Dexterity.

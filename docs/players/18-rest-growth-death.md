@@ -1,4 +1,4 @@
-# Rest, Growth & Death
+# Rest & Growth
 
 In a safe space, share a meal and spend 8 hours to recover.
 
@@ -28,6 +28,24 @@ If you reached a milestone
 - Level +1
 - Draft a new Skill.
 - +1 in any Ability Point
+
+# Rolls & Death
+
+## Advantage and Disadvantage Rolls
+
+In Advantage roll an extra die, remove the worst. In Disadvantage roll an extra die, lose the best.
+
+## Pocket Rolls
+
+Rolling Pocket is an effect. Sometimes it's chosen, and other times it's forced. You can spend Dexterity to reroll any Pocket roll.
+
+- **Pocket**: set your Pocket to d6.
+- **Pocket Up**: roll d6 and compare to your Pocket. Take the bigger value.
+- **Pocket Down**: roll d6 and compare to your Pocket. Take the smaller value.
+
+## Exploding Rolls
+
+Rolls denoted by an asterisk are exploding rolls. Reroll these rolls on 6, adding all the dice rolled this way.
 
 ## Death
 

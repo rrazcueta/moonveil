@@ -23,6 +23,8 @@ header-includes:
 
 > YOU’RE IN A CARAVAN OF SEEKERS INVESTIGATING THE MOONVEIL. YOUR VEIL GUIDE WILL TAKE YOU WHERE YOU NEED TO GO.
 
+\clearpage
+
 ## What You Need
 
 - 2–6 players as Seekers
@@ -32,13 +34,16 @@ header-includes:
 
 ## Who is this for?
 
-MOONVEIL is a tabletop RPG dungeon crawler. It's for people that like swords and magic. It's also for people that like dice games. The Guide is mostly transparent to the players - unless it's fun to not know. And the Dice are for when it's fun for no one to know.
+MOONVEIL is a tabletop RPG dungeon crawler. It's for people that like swords and magic and dice.
+
+You play as Seekers exploring secrets under the Moonveil. The Guide helps you see what’s there, and the Dice handle whatever’s left to fate.
 
 Core features
 
-- 2d6 Core Resolution, Dice manipulation
+- 2d6 Core Resolution
+- Dice manipulation
 - Ability endurance
-- Skill drafting
+- Randomized skill drafting
 - Clear, simple choices
 - Classless, deadly
 

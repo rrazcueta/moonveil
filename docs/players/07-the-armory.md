@@ -1,4 +1,4 @@
-# Items & The Armory
+# The Armory
 
 Exploring the Moonveil means hauling gear — and sometimes hauling friends. Track everything you carry in **Equipment**.
 
@@ -24,12 +24,11 @@ You can carry **Willpower + 6** items without penalty. For each item beyond that
 
 ## Armor
 
-| Equipment   | Cost | Description                                            |
-| ----------- | ---: | ------------------------------------------------------ |
-| Shield      |    4 | When your Pocket is Odd, Evade +1                      |
-| Greatshield |    8 | 2 Slots. Evade +1, but when Pocket < 4, you can't Move |
-| Helmet      |    2 | Limit +1                                               |
-| Cloak       |    6 | Can roll Pocket on Moving                              |
+| Equipment | Cost | Description                       |
+| --------- | ---: | --------------------------------- |
+| Shield    |    4 | When your Pocket is Odd, Evade +1 |
+| Helmet    |    2 | Limit +1                          |
+| Cloak     |    6 | Can roll Pocket on Moving         |
 
 | Armor  | Cost | Slots | Description                   |
 | ------ | ---: | :---: | ----------------------------- |
@@ -37,16 +36,18 @@ You can carry **Willpower + 6** items without penalty. For each item beyond that
 | Medium |    5 |   2   | Damage Reduction -1           |
 | Heavy  |  >50 |   3   | Damage Reduction -1. Evade +1 |
 
+\clearpage
+
 ## Weapons
 
-| Melee                 | Cost | Description                          |
-| --------------------- | ---: | ------------------------------------ |
-| Club, Knife, or Staff |    1 | Dungeon Gear                         |
-| Dagger                |    2 | Roll Advantage When Unnoticed        |
-| Spear                 |    4 | Strong Damage +2                     |
-| Hammer                |    5 | Critical Damage +d6\*                |
-| Axe                   |    5 | Minimum Damage 2. Critical Damage +3 |
-| Sword                 |    6 | Minimum Damage 3                     |
+| Melee              | Cost | Description                          |
+| ------------------ | ---: | ------------------------------------ |
+| Club, Knife, Staff |    1 | Dungeon Gear                         |
+| Dagger             |    2 | Can reroll attacks with Dexterity    |
+| Spear              |    4 | Strong Damage +2                     |
+| Hammer             |    5 | Critical Damage +d6\*                |
+| Axe                |    5 | Minimum Damage 2. Critical Damage +3 |
+| Sword              |    6 | Minimum Damage 3                     |
 
 | 2H Melee   | Cost | Slots | Description                             |
 | ---------- | ---: | :---: | --------------------------------------- |
@@ -56,23 +57,22 @@ You can carry **Willpower + 6** items without penalty. For each item beyond that
 | Halberd    |   10 |   2   | Strong Damage +2. Critical Damage +d6\* |
 | Greatsword |    9 |   2   | Minimum Damage 3. Strong Damage +2      |
 
-| Ranged   | Cost | Range | Description                                                  |
-| -------- | ---: | :---: | ------------------------------------------------------------ |
-| Whip     |    3 |   0   | Target rolls Pocket Down on any hit                          |
-| Bow      |    2 |   2   |                                                              |
-| Longbow  |    2 |   2   | Critical Damage +d6\*. When Range is 0, Roll at Disadvantage |
-| Crossbow |    8 |   1   | Strong Damage +2. Spend Move to Reload                       |
+| Ranged   | Cost | Range | Description                                                    |
+| -------- | ---: | :---: | -------------------------------------------------------------- |
+| Whip     |    3 |   0   | Target rolls Pocket Down on any hit                            |
+| Bow      |    2 |   2   |                                                                |
+| Longbow  |    5 |   2   | Critical Damage +d6\*. When Range is 0, Attack at Disadvantage |
+| Crossbow |    8 |   1   | Strong Damage +2. Spend Move to Reload                         |
 
 ## Et Cetera
 
-| Special      | Cost | Description                                   |
-| ------------ | ---- | --------------------------------------------- |
-| Bomb         | 5    | Range 1. 1 Round to detonate. d6 area damage  |
-| A Huge Bomb! | >25  | Range 1. 1 Round to detonate. 6d6 area damage |
-| Caltrops     | 1    | Pocket down to traverse or d6/2 damage        |
-| Oil          | 1    | Pocket Down to traverse. Fire is d6/2 damage  |
-| Arrows       | 1    | Dungeon Gear                                  |
-| Bolts        | 1    | Dungeon Gear                                  |
+| Special       | Cost | Description                                         |
+| ------------- | ---- | --------------------------------------------------- |
+| Bomb          | 5    | Throw Range 1. 1 Round to detonate. d6 area damage  |
+| A Huge Bomb!  | >25  | Throw Range 1. 1 Round to detonate. 6d6 area damage |
+| Caltrops      | 1    | Pocket down to traverse or d6/2 damage              |
+| Oil           | 1    | Pocket Down to traverse. Fire is d6/2 damage        |
+| Arrows, Bolts | 1    | Dungeon Gear                                        |
 
 <!-- | Quiver or Cache |    1 |       |       | Can be found in Dungeon Gear     |
 |                 |      |       |       | Empties out when rolling under 3 |
